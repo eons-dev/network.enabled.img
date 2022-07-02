@@ -1,0 +1,27 @@
+{
+  "name": "client-tinc",
+  "type": "img",
+  "clear_build_path" : false,
+  "build_in": "..",
+  "next" : [
+    {
+      "clear_build_path" : true,
+      "build": "docker",
+      "run_when" : [
+        "release"
+      ],
+      "build_in" : "docker",
+      "config" : {
+        "base_image" : "ubuntu",
+        "image_name" : "eons/img_client-tinc",
+        "image_os" : "debian",
+        "also" : [
+          "EXPOSE 655"
+        ],
+        "tags" : [
+          "latest"
+        ]
+      }
+    }
+  ]
+}
