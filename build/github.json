@@ -7,15 +7,18 @@
     {
       "clear_build_path" : true,
       "build": "docker",
+      "build_in" : "docker",
       "run_when" : [
         "release"
       ],
-      "build_in" : "docker",
       "config" : {
         "base_image" : "ubuntu",
         "image_name" : "eons/img_client-tinc",
         "image_os" : "debian",
         "also" : [
+          "COPY service/tinc.service /etc/systemd/system/tinc.service",
+          "COPY service/tinc@.service /etc/systemd/system/tinc@.service",
+          "RUN systemctl daemon-reload",
           "EXPOSE 655"
         ],
         "tags" : [
