@@ -1,3 +1,8 @@
+
+####################################################
+# THIS ONLY WORKS IF THE OS IS BOOTED WITH SYSTEMD #
+####################################################
+
 [Unit]
 Description=Tinc net %i
 Documentation=info:tinc

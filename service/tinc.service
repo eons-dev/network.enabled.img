@@ -1,6 +1,10 @@
 # This is a mostly empty service, but allows commands like stop, start, reload
 # to propagate to all tinc@ service instances.
 
+####################################################
+# THIS ONLY WORKS IF THE OS IS BOOTED WITH SYSTEMD #
+####################################################
+
 [Unit]
 Description=Tinc VPN
 Documentation=info:tinc

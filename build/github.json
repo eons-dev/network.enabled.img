@@ -12,13 +12,10 @@
         "release"
       ],
       "config" : {
-        "base_image" : "ubuntu",
-        "image_name" : "eons/img_client-tinc",
+        "base_image" : "eons/img_base",
+        "image_name" : "eons/img_tinc",
         "image_os" : "debian",
         "also" : [
-          "COPY service/tinc.service /etc/systemd/system/tinc.service",
-          "COPY service/tinc@.service /etc/systemd/system/tinc@.service",
-          "RUN systemctl daemon-reload",
           "EXPOSE 655"
         ],
         "tags" : [
