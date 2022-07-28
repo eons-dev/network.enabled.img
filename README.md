@@ -2,18 +2,17 @@
 This image adds mesh-vpn capabilities to [eons/img_base](https://github.com/eons-dev/img_base).
 
 ## Usage
-To use this image, you must do 2 things:
-1. mount a valid tinc directory to /etc/tinc/
-2. add a `launch` directive specifying the vpn name
+To use this image, you must do 1 thing: mount a valid tinc directory to /etc/tinc/
 
 ### Tinc Directory
 
-A valid tinc directory should contain a "nets.boot" file which can contain the names of tinc networks or may be empty (the nets.boot file is not used by our launch system).
+**TL;DR:** In the /util/ folder, you will find a mktinc.sh script which will create a tinc directory for you.  
+NOTE: you can also use [the similar server deployment script](https://github.com/eons-dev/server_deploy/blob/main/install/mktinc.sh) on any machines you wish to connect to a tinc host using this image.
 
-each tinc network (and there may be multiple) should have its own folder with the following contents:
+Each tinc network (and there may be multiple) should have its own folder with the following contents:
 ```
 /etc/tinc/
-├─ nets.boot
+├─ nets.boot (optional)
 ├─ network_1/
 │  ├─ ed25519_key.priv
 │  ├─ rsa_key.priv
@@ -39,6 +38,10 @@ each tinc network (and there may be multiple) should have its own folder with th
 ├─ ...
 ├─ network_n
 ```
+
+NOTE: the tinc directory may contain a "nets.boot" file which can contain the names of tinc networks or may be empty. The nets.boot file is not used by our launch system.
+
+**SEE LIMITATIONS (below) REGARDING MULTIPLE NETWORKS**
 
 #### Network Directory
 
@@ -103,24 +106,7 @@ These files should be automatically generated when installing tinc but can be ma
 
 For a full list of host configuration variables, see the docs: https://www.tinc-vpn.org/documentation/Host-configuration-variables.html
 
-### Launch Directive
 
-To start tinc, use a command like: `tinc start -n network_n -D`, where "network_n" is the name of your network.
-If you would like debugging info, you can add `-d 3`, etc.
-See the docs for more info: https://www.tinc-vpn.org/documentation/Runtime-options.html
+## Limitations
 
-#### With EBBS
-
-If using EBBS, simply add a `launch` entry for each network. This would look like:
-```json
-"launch":
-{
-    "network_n" : "tinc start -n network_n -D"
-}
-```
-
-#### Without EBBS
-
-This image builds off of [eons/img_base](https://github.com/eons-dev/img_base), which creates a launch.d directory. All the EBBS Docker Builder does is create a script in that directory, which you can do too!
-
-Create a file named "network_n" (obviously, substitute network_n for the name of your network) and add the contents: `tinc start -n network_n -D`. That's it!
+This image exposes ONLY port 655. If you would like to use a different port or multiple ports, you must fork this and add your `EXPOSE` directives.

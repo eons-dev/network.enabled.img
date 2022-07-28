@@ -1,8 +1,8 @@
 {
-  "name": "client-tinc",
+  "name": "tinc",
   "type": "img",
   "clear_build_path" : false,
-  "build_in": "..",
+  "build_in": "github",
   "next" : [
     {
       "clear_build_path" : true,
@@ -11,10 +11,16 @@
       "run_when" : [
         "release"
       ],
+      "copy": [
+        {"../../src" : "src"}
+      ],
       "config" : {
         "base_image" : "eons/img_base",
         "image_name" : "eons/img_tinc",
         "image_os" : "debian",
+        "launch": {
+          "tinc" : "/usr/local/bin/tinc_start"
+        },
         "also" : [
           "EXPOSE 655"
         ],
