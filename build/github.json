@@ -1,23 +1,72 @@
 {
-  "name": "tinc",
+  "name" : "tinc",
   "type": "img",
-  "clear_build_path" : false,
+  "clear_build_path" : true,
   "build_in": "github",
-  "next" : [
+  "next": [
     {
-      "clear_build_path" : true,
+      "build" : "in_container",
+      "build_in": "tome_tinc",
+      "run_when" : [
+        "update"
+      ],
+      "config" : {
+        "clear_build_path" : false,
+        "type" : "tome",
+        "image" : "eons/img_generic-builder",
+        "copy_env" : [
+          "repo_username",
+          "repo_password"
+        ],
+        "next": [
+          {
+            "build" : "arbitrary",
+            "copy" : [
+              {"../../../ext/" : "ext/"}
+            ],
+            "config" : {
+              "commands": [
+                "cd /mnt/env/ext/tinc-1.1pre17; ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var; make; make install",
+                "mkdir /mnt/run/build/BUILD_COMPLETE",
+                "mkdir /mnt/run/build/BUILD_COMPLETE/bin",
+                "cp -rav /usr/sbin/tinc /mnt/run/build/BUILD_COMPLETE/bin/",
+                "cp -rav /usr/sbin/tincd /mnt/run/build/BUILD_COMPLETE/bin/"
+              ],
+              "next" : [
+                {
+                  "build": "publish",
+                  "build_in" : "BUILD_COMPLETE",
+                  "config": {
+                    "clear_build_path" : false,
+                    "type": "tome",
+                    "visibility": "public"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "build_in": "tinc_img",
       "build": "docker",
       "build_in" : "docker",
       "run_when" : [
         "release"
       ],
       "copy": [
-        {"../../src" : "src"}
+        {"../../bin" : "bin"}
       ],
       "config" : {
         "base_image" : "eons/img_base",
         "image_name" : "eons/img_tinc",
         "image_os" : "debian",
+        "emi" : {
+          "install" : [
+            "tinc"
+          ]
+        },
         "launch": {
           "tinc" : "/usr/local/bin/tinc_start"
         },
