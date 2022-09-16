@@ -2,5 +2,5 @@
 
 cd /etc/tinc/
 for dir in $(ls -d */); do
-tinc start -n ${i%%/}
+tinc start -n ${dir%%/}
 done
