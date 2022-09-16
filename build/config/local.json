@@ -62,9 +62,6 @@
         "install" : [
           "lzo"
         ],
-        "launch": {
-          "tinc" : "/usr/local/bin/tinc_start"
-        },
         "also" : [
           "EXPOSE 655"
         ],
