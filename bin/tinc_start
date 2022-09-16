@@ -1,6 +1,0 @@
-#!/bin/bash
-
-cd /etc/tinc/
-for dir in $(ls -d */); do
-tinc start -n ${dir%%/}
-done

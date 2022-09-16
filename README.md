@@ -1,10 +1,28 @@
-# Tinc Image
-This image adds mesh-vpn capabilities to [eons/img_base](https://github.com/eons-dev/img_base).
+# Network Enabled Image
+This image adds networking capabilities to [eons/img_base](https://github.com/eons-dev/img_base).
 
-## Usage
-To use this image, you must do 1 thing: mount a valid tinc directory to /etc/tinc/
+So far, this image only includes `tinc` as the network provider.
+[Tinc](https://www.tinc-vpn.org/) provides mesh-vpn that is fast, secure, and reliable.
 
-### Tinc Directory
+## Limitations
+
+### Requires Privileges
+
+Networking with Docker is not trivial. Do not expect to be able to run this image on your infrastructure without modification. We use [img_host](https://github.com/infrastructure-tech/img_host) to run this and our other images which require kernel modules and "hardware access".
+
+
+### Limited Ports
+
+This image exposes ONLY port 655. If you would like to use a different port or multiple ports, you must fork this and add your `EXPOSE` directives.
+
+## Networks
+
+### Tinc
+
+#### Usage
+To use `tinc`, you must do 1 thing: mount a valid tinc directory to /etc/tinc/
+
+##### Tinc Directory
 
 **TL;DR:** In the /util/ folder, you will find a mktinc.sh script which will create a tinc directory for you.  
 NOTE: you can also use [the similar server deployment script](https://github.com/eons-dev/server_deploy/blob/main/install/mktinc.sh) on any machines you wish to connect to a tinc host using this image.
@@ -41,9 +59,9 @@ Each tinc network (and there may be multiple) should have its own folder with th
 
 NOTE: the tinc directory may contain a "nets.boot" file which can contain the names of tinc networks or may be empty. The nets.boot file is not used by our launch system.
 
-**SEE LIMITATIONS (below) REGARDING MULTIPLE NETWORKS**
+**SEE LIMITATIONS (above) REGARDING MULTIPLE NETWORKS**
 
-#### Network Directory
+##### Network Directory
 
 Each network should have its own directory where the name of the directory (above: "network_n") is the name of the network (e.g. "network_n" gets renamed to "eons").
 
@@ -106,7 +124,3 @@ These files should be automatically generated when installing tinc but can be ma
 
 For a full list of host configuration variables, see the docs: https://www.tinc-vpn.org/documentation/Host-configuration-variables.html
 
-
-## Limitations
-
-This image exposes ONLY port 655. If you would like to use a different port or multiple ports, you must fork this and add your `EXPOSE` directives.
