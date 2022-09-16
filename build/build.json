@@ -1,5 +1,5 @@
 {
-  "name": "tinc",
+  "name": "network-enabled",
   "type": "img",
   "clear_build_path" : true,
   "build_in" : "tmp",

@@ -50,15 +50,9 @@
       "build_in": "tinc_img",
       "build": "docker",
       "build_in" : "docker",
-      "run_when_any" : [
-        "release"
-      ],
-      "copy": [
-        {"../../../bin" : "bin"}
-      ],
       "config" : {
         "base_image" : "eons/img_base",
-        "image_name" : "eons/img_tinc",
+        "image_name" : "eons/img_network-enabled",
         "image_os" : "alpine",
         "emi" : {
           "install" : [
