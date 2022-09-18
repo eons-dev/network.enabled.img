@@ -10,11 +10,6 @@ So far, this image only includes `tinc` as the network provider.
 
 Networking with Docker is not trivial. Do not expect to be able to run this image on your infrastructure without modification. We use [img_host](https://github.com/infrastructure-tech/img_host) to run this and our other images which require kernel modules and "hardware access".
 
-
-### Limited Ports
-
-This image exposes ONLY port 655. If you would like to use a different port or multiple ports, you must fork this and add your `EXPOSE` directives.
-
 ## Networks
 
 ### Tinc
@@ -58,8 +53,6 @@ Each tinc network (and there may be multiple) should have its own folder with th
 ```
 
 NOTE: the tinc directory may contain a "nets.boot" file which can contain the names of tinc networks or may be empty. The nets.boot file is not used by our launch system.
-
-**SEE LIMITATIONS (above) REGARDING MULTIPLE NETWORKS**
 
 ##### Network Directory
 
