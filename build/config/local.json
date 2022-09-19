@@ -47,7 +47,6 @@
       }
     },
     {
-      "build_in": "tinc_img",
       "build": "docker",
       "build_in" : "docker",
       "config" : {
