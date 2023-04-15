@@ -1,0 +1,900 @@
+[37m14:34:29[36m [DEBUG] No build specified. Assuming build pipeline is written in config. [37m(ebbs.py:76)[0m
+[37m14:34:29[36m [DEBUG] Populating config from build.json [37m(eons.py:1955)[0m
+[37m14:34:29[36m [DEBUG] Fetching verbosity from ['args', 'config', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...Eons Basic Build System could not find verbosity; using default: 0. [37m(eons.py:582)[0m
+[37m14:34:29[36m [DEBUG] Fetching log_file from ['args', 'config', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...Eons Basic Build System could not find log_file; using default: None. [37m(eons.py:582)[0m
+[37m14:34:29[36m [DEBUG] Setting (<class 'NoneType'>) log_file = None [37m(eons.py:538)[0m
+[37m14:34:29[36m [DEBUG] <---- Eons Basic Build System (log level: 10) ----> [37m(eons.py:2036)[0m
+[37m14:34:29[36m [DEBUG] Got extra arguments: {} [37m(eons.py:2037)[0m
+[37m14:34:29[36m [DEBUG] Got config contents: {'name': 'network.enabled', 'type': 'img', 'clear_build_path': True, 'build_in': 'tmp', 'next': [{'run_when_none': ['github'], 'build': 'proxy', 'build_in': 'local', 'config': {'clear_build_path': False, 'proxy': '../config/local.json'}}, {'run_when_any': ['github'], 'build': 'proxy', 'build_in': 'github', 'config': {'clear_build_path': False, 'proxy': '../config/github.json'}}]} [37m(eons.py:2038)[0m
+[37m14:34:29[36m [DEBUG] Fetching no_repo from ['this', 'args', 'config']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...Eons Basic Build System could not find no_repo; using default: False. [37m(eons.py:582)[0m
+[37m14:34:29[36m [DEBUG] Fetching repo_online from ['this', 'args', 'globals', 'config', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...Eons Basic Build System could not find repo_online; using default: True. [37m(eons.py:582)[0m
+[37m14:34:29[36m [DEBUG] Fetching repo_store from ['this', 'args', 'globals', 'config', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...Eons Basic Build System could not find repo_store; using default: /home/goat/git/infrastructure-tech/network_enabled.img/build/eons. [37m(eons.py:582)[0m
+[37m14:34:29[36m [DEBUG] Fetching repo_url from ['this', 'args', 'globals', 'config', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...Eons Basic Build System could not find repo_url; using default: https://api.infrastructure.tech/v1/package. [37m(eons.py:582)[0m
+[37m14:34:29[36m [DEBUG] Fetching repo_username from ['this', 'args', 'globals', 'config', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...Eons Basic Build System could not find repo_username; using default: None. [37m(eons.py:582)[0m
+[37m14:34:29[36m [DEBUG] Fetching repo_password from ['this', 'args', 'globals', 'config', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...Eons Basic Build System could not find repo_password; using default: None. [37m(eons.py:582)[0m
+[37m14:34:29[36m [DEBUG] Fetching next from ['args', 'config']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...Eons Basic Build System got next from config. [37m(eons.py:576)[0m
+[37m14:34:29[36m [DEBUG] Setting (<class 'list'>) next = [{'run_when_none': ['github'], 'build': 'proxy', 'build_in': 'local', 'config': {'clear_build_path': False, 'proxy': '../config/local.json'}}, {'run_when_any': ['github'], 'build': 'proxy', 'build_in': 'github', 'config': {'clear_build_path': False, 'proxy': '../config/github.json'}}] [37m(eons.py:538)[0m
+[37m14:34:29[36m [DEBUG] Setting values from args: {} [37m(eons.py:734)[0m
+[37m14:34:29[36m [DEBUG] Loading SelfRegistering classes in /home/goat/git/infrastructure-tech/network_enabled.img/build/eons [37m(eons.py:107)[0m
+[37m14:34:29[36m [DEBUG] Available modules: ['__pycache__', 'arbitrary.py', 'in_container.py', 'proxy.py'] [37m(eons.py:108)[0m
+[37m14:34:29[36m [DEBUG] arbitrary imported. [37m(eons.py:123)[0m
+[37m14:34:29[36m [DEBUG] in_container imported. [37m(eons.py:123)[0m
+[37m14:34:29[36m [DEBUG] proxy imported. [37m(eons.py:123)[0m
+[37m14:34:29[36m [DEBUG] Creating new ExecutorTracker: <eons.eons.ExecutorTracker object at 0x7f0a0ed43280> [37m(eons.py:1256)[0m
+[37m14:34:29[36m [DEBUG] Now tracking Executor: <ebbs.ebbs.EBBS object at 0x7f0a0ed42830> [37m(eons.py:1282)[0m
+[37m14:34:29[36m [DEBUG] Fetching path from ['this', 'args', 'globals', 'config', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...Eons Basic Build System could not find path; using default: ../. [37m(eons.py:582)[0m
+[37m14:34:29[36m [DEBUG] Fetching build_in from ['this', 'args', 'globals', 'config', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...Eons Basic Build System got build_in from config. [37m(eons.py:576)[0m
+[37m14:34:29[36m [DEBUG] Executing default(path=/home/goat/git/infrastructure-tech/network_enabled.img/build, build_in=tmp, events={'update'}) [37m(eons.py:2073)[0m
+[37m14:34:29[36m [DEBUG] Creating new default [37m(eons.py:94)[0m
+[37m14:34:29[36m [DEBUG] <---- default ----> [37m(eons.py:814)[0m
+[37m14:34:29[36m [DEBUG] default((), {'path': '/home/goat/git/infrastructure-tech/network_enabled.img/build', 'build_in': 'tmp', 'events': {'update'}, 'executor': <ebbs.ebbs.EBBS object at 0x7f0a0ed42830>}) [37m(eons.py:819)[0m
+[37m14:34:29[36m [DEBUG] default was preceded by None [37m(eons.py:722)[0m
+[37m14:34:29[36m [DEBUG] Creating new <class 'eons.eons.Method'> from CreateFile [37m(eons.py:883)[0m
+[37m14:34:29[36m [DEBUG] Creating new <class 'eons.eons.Method'> from Copy [37m(eons.py:883)[0m
+[37m14:34:29[36m [DEBUG] Creating new <class 'eons.eons.Method'> from Delete [37m(eons.py:883)[0m
+[37m14:34:29[36m [DEBUG] Creating new <class 'eons.eons.Method'> from RunCommand [37m(eons.py:883)[0m
+[37m14:34:29[36m [DEBUG] Populating method default.CreateFile(file, mode=w+) [37m(eons.py:697)[0m
+[37m14:34:29[36m [DEBUG] Populating method default.Copy(source, destination, root=/) [37m(eons.py:697)[0m
+[37m14:34:29[36m [DEBUG] Populating method default.Delete(target) [37m(eons.py:697)[0m
+[37m14:34:29[36m [DEBUG] Populating method default.RunCommand(command, saveout=False, raiseExceptions=True) [37m(eons.py:697)[0m
+[37m14:34:29[36m [DEBUG] rootPath for default is /home/goat/git/infrastructure-tech/network_enabled.img/build [37m(ebbs.py:172)[0m
+[37m14:34:29[36m [DEBUG] buildPath for default is /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp [37m(ebbs.py:177)[0m
+[37m14:34:29[36m [DEBUG] srcPath for default is None [37m(ebbs.py:193)[0m
+[37m14:34:29[36m [DEBUG] incPath for default is None [37m(ebbs.py:193)[0m
+[37m14:34:29[36m [DEBUG] depPath for default is None [37m(ebbs.py:193)[0m
+[37m14:34:29[36m [DEBUG] libPath for default is None [37m(ebbs.py:193)[0m
+[37m14:34:29[36m [DEBUG] exePath for default is None [37m(ebbs.py:193)[0m
+[37m14:34:29[36m [DEBUG] testPath for default is None [37m(ebbs.py:193)[0m
+[37m14:34:29[36m [DEBUG] Looking for local configuration: /home/goat/git/infrastructure-tech/network_enabled.img/build/build.json [37m(ebbs.py:214)[0m
+[37m14:34:29[36m [DEBUG] Got local config contents: {'name': 'network.enabled', 'type': 'img', 'clear_build_path': True, 'build_in': 'tmp', 'next': [{'run_when_none': ['github'], 'build': 'proxy', 'build_in': 'local', 'config': {'clear_build_path': False, 'proxy': '../config/local.json'}}, {'run_when_any': ['github'], 'build': 'proxy', 'build_in': 'github', 'config': {'clear_build_path': False, 'proxy': '../config/github.json'}}]} [37m(ebbs.py:219)[0m
+[37m14:34:29[36m [DEBUG] ...Eons Basic Build System got name from config. [37m(eons.py:576)[0m
+[37m14:34:29[36m [DEBUG] Fetching name from ['args', 'config', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...default got name from config. [37m(eons.py:576)[0m
+[37m14:34:29[36m [DEBUG] Setting (<class 'str'>) projectName = network.enabled [37m(eons.py:538)[0m
+[37m14:34:29[36m [DEBUG] ...Eons Basic Build System got type from config. [37m(eons.py:576)[0m
+[37m14:34:29[36m [DEBUG] Fetching type from ['args', 'config', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...default got type from config. [37m(eons.py:576)[0m
+[37m14:34:29[36m [DEBUG] Setting (<class 'str'>) projectType = img [37m(eons.py:538)[0m
+[37m14:34:29[36m [DEBUG] Fetching clear_build_path from ['args', 'config']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...default got clear_build_path from config. [37m(eons.py:576)[0m
+[37m14:34:29[36m [DEBUG] Fetching next from ['args', 'config']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...default got next from config. [37m(eons.py:576)[0m
+[37m14:34:29[36m [DEBUG] Setting (<class 'list'>) next = [{'run_when_none': ['github'], 'build': 'proxy', 'build_in': 'local', 'config': {'clear_build_path': False, 'proxy': '../config/local.json'}}, {'run_when_any': ['github'], 'build': 'proxy', 'build_in': 'github', 'config': {'clear_build_path': False, 'proxy': '../config/github.json'}}] [37m(eons.py:538)[0m
+[37m14:34:29[36m [DEBUG] Setting values from args: {} [37m(eons.py:734)[0m
+[37m14:34:29[36m [DEBUG] <---- Preparing default ----> [37m(ebbs.py:358)[0m
+[37m14:34:29[36m [DEBUG] <---- Delete ----> [37m(eons.py:814)[0m
+[37m14:34:29[36m [DEBUG] Delete(('/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp',), {}) [37m(eons.py:819)[0m
+[37m14:34:29[36m [DEBUG] Setting values from args: {'target': '/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp'} [37m(eons.py:734)[0m
+[37m14:34:29[36m [DEBUG] Setting (<class 'str'>) target = /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp [37m(eons.py:538)[0m
+[37m14:34:29[36m [DEBUG] Deleting directory /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp [37m(:10)[0m
+[37m14:34:29[36m [DEBUG] >---- Delete complete ----< [37m(eons.py:867)[0m
+[37m14:34:29[36m [DEBUG] >---- Done Preparing default ----< [37m(ebbs.py:373)[0m
+[37m14:34:29[97m [INFO] Using default to build "network.enabled", a "img" in /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp [37m(ebbs.py:375)[0m
+[37m14:34:29[36m [DEBUG] <---- Building default ----> [37m(ebbs.py:377)[0m
+[37m14:34:29[36m [DEBUG] >---- Done Building default ----< [37m(ebbs.py:379)[0m
+[37m14:34:29[36m [DEBUG] <---- Preparing for next builder: proxy ----> [37m(ebbs.py:287)[0m
+[37m14:34:29[36m [DEBUG] Next build path is: /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/. [37m(ebbs.py:296)[0m
+[37m14:34:29[36m [DEBUG] writing: /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/./build.json [37m(ebbs.py:308)[0m
+[37m14:34:29[36m [DEBUG] Adding to config: name = network.enabled [37m(ebbs.py:313)[0m
+[37m14:34:29[36m [DEBUG] Adding to config: type = img [37m(ebbs.py:313)[0m
+[37m14:34:29[36m [DEBUG] >---- Completed preparation for: proxy ----< [37m(ebbs.py:318)[0m
+[37m14:34:29[36m [DEBUG] Executing proxy(path=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/., build_in=local, events={'update'}, precursor=<build_default.default object at 0x7f0a0dbb85b0>) [37m(eons.py:2073)[0m
+[37m14:34:29[36m [DEBUG] Creating new proxy [37m(eons.py:94)[0m
+[37m14:34:29[36m [DEBUG] <---- proxy ----> [37m(eons.py:814)[0m
+[37m14:34:29[36m [DEBUG] proxy((), {'path': '/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/.', 'build_in': 'local', 'events': {'update'}, 'precursor': <build_default.default object at 0x7f0a0dbb85b0>, 'executor': <ebbs.ebbs.EBBS object at 0x7f0a0ed42830>}) [37m(eons.py:819)[0m
+[37m14:34:29[36m [DEBUG] proxy was preceded by default [37m(eons.py:719)[0m
+[37m14:34:29[36m [DEBUG] Creating new <class 'eons.eons.Method'> from CreateFile [37m(eons.py:883)[0m
+[37m14:34:29[36m [DEBUG] Creating new <class 'eons.eons.Method'> from Copy [37m(eons.py:883)[0m
+[37m14:34:29[36m [DEBUG] Creating new <class 'eons.eons.Method'> from Delete [37m(eons.py:883)[0m
+[37m14:34:29[36m [DEBUG] Creating new <class 'eons.eons.Method'> from RunCommand [37m(eons.py:883)[0m
+[37m14:34:29[36m [DEBUG] Populating method proxy.CreateFile(file, mode=w+) [37m(eons.py:697)[0m
+[37m14:34:29[36m [DEBUG] Populating method proxy.Copy(source, destination, root=/) [37m(eons.py:697)[0m
+[37m14:34:29[36m [DEBUG] Populating method proxy.Delete(target) [37m(eons.py:697)[0m
+[37m14:34:29[36m [DEBUG] Populating method proxy.RunCommand(command, saveout=False, raiseExceptions=True) [37m(eons.py:697)[0m
+[37m14:34:29[36m [DEBUG] rootPath for proxy is /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp [37m(ebbs.py:172)[0m
+[37m14:34:29[36m [DEBUG] buildPath for proxy is /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local [37m(ebbs.py:177)[0m
+[37m14:34:29[36m [DEBUG] srcPath for proxy is None [37m(ebbs.py:193)[0m
+[37m14:34:29[36m [DEBUG] incPath for proxy is None [37m(ebbs.py:193)[0m
+[37m14:34:29[36m [DEBUG] depPath for proxy is None [37m(ebbs.py:193)[0m
+[37m14:34:29[36m [DEBUG] libPath for proxy is None [37m(ebbs.py:193)[0m
+[37m14:34:29[36m [DEBUG] exePath for proxy is None [37m(ebbs.py:193)[0m
+[37m14:34:29[36m [DEBUG] testPath for proxy is None [37m(ebbs.py:193)[0m
+[37m14:34:29[36m [DEBUG] Looking for local configuration: /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/build.json [37m(ebbs.py:214)[0m
+[37m14:34:29[36m [DEBUG] Got local config contents: {'clear_build_path': False, 'proxy': '../config/local.json', 'name': 'network.enabled', 'type': 'img'} [37m(ebbs.py:219)[0m
+[37m14:34:29[36m [DEBUG] ...Eons Basic Build System got name from config. [37m(eons.py:576)[0m
+[37m14:34:29[36m [DEBUG] Fetching name from ['args', 'config', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...proxy got name from config. [37m(eons.py:576)[0m
+[37m14:34:29[36m [DEBUG] Setting (<class 'str'>) projectName = network.enabled [37m(eons.py:538)[0m
+[37m14:34:29[36m [DEBUG] ...Eons Basic Build System got type from config. [37m(eons.py:576)[0m
+[37m14:34:29[36m [DEBUG] Fetching type from ['args', 'config', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...proxy got type from config. [37m(eons.py:576)[0m
+[37m14:34:29[36m [DEBUG] Setting (<class 'str'>) projectType = img [37m(eons.py:538)[0m
+[37m14:34:29[36m [DEBUG] Fetching clear_build_path from ['args', 'config']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...proxy got clear_build_path from config. [37m(eons.py:576)[0m
+[37m14:34:29[36m [DEBUG] Fetching next from ['args', 'config']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...proxy could not find next; using default: []. [37m(eons.py:582)[0m
+[37m14:34:29[36m [DEBUG] Setting (<class 'list'>) next = [] [37m(eons.py:538)[0m
+[37m14:34:29[36m [DEBUG] Setting values from args: {} [37m(eons.py:734)[0m
+[37m14:34:29[36m [DEBUG] Fetching proxy from ['args', 'config', 'precursor', 'executor', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...proxy got proxy from config. [37m(eons.py:576)[0m
+[37m14:34:29[36m [DEBUG] Setting (<class 'str'>) proxy = ../config/local.json [37m(eons.py:538)[0m
+[37m14:34:29[36m [DEBUG] Fetching add_args from ['args', 'config', 'precursor', 'executor', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...Eons Basic Build System detected loop (['proxy', 'default', 'Eons Basic Build System']) while trying to fetch add_args; using default: {}. [37m(eons.py:555)[0m
+[37m14:34:29[36m [DEBUG] ...proxy could not find add_args; using default: {}. [37m(eons.py:582)[0m
+[37m14:34:29[36m [DEBUG] Setting (<class 'eons.eons.util.DotDict'>) add_args = {} [37m(eons.py:538)[0m
+[37m14:34:29[36m [DEBUG] <---- Preparing proxy ----> [37m(ebbs.py:358)[0m
+[37m14:34:29[36m [DEBUG] >---- Done Preparing proxy ----< [37m(ebbs.py:373)[0m
+[37m14:34:29[97m [INFO] Using proxy to build "network.enabled", a "img" in /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local [37m(ebbs.py:375)[0m
+[37m14:34:29[36m [DEBUG] <---- Building proxy ----> [37m(ebbs.py:377)[0m
+[37m14:34:29[36m [DEBUG] Populating config from /home/goat/git/infrastructure-tech/network_enabled.img/build/config/local.json [37m(eons.py:1955)[0m
+[37m14:34:29[36m [DEBUG] Executing default(path=., build_in=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local, events={'update'}, name=network.enabled, type=img, precursor=<proxy.proxy object at 0x7f0a0dbb93c0>) [37m(eons.py:2073)[0m
+[37m14:34:29[36m [DEBUG] <---- default ----> [37m(eons.py:814)[0m
+[37m14:34:29[36m [DEBUG] default((), {'path': '.', 'build_in': '/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local', 'events': {'update'}, 'name': 'network.enabled', 'type': 'img', 'precursor': <proxy.proxy object at 0x7f0a0dbb93c0>, 'executor': <ebbs.ebbs.EBBS object at 0x7f0a0ed42830>}) [37m(eons.py:819)[0m
+[37m14:34:29[36m [DEBUG] default was preceded by proxy [37m(eons.py:719)[0m
+[37m14:34:29[36m [DEBUG] Creating new <class 'eons.eons.Method'> from CreateFile [37m(eons.py:883)[0m
+[37m14:34:29[36m [DEBUG] Creating new <class 'eons.eons.Method'> from Copy [37m(eons.py:883)[0m
+[37m14:34:29[36m [DEBUG] Creating new <class 'eons.eons.Method'> from Delete [37m(eons.py:883)[0m
+[37m14:34:29[36m [DEBUG] Creating new <class 'eons.eons.Method'> from RunCommand [37m(eons.py:883)[0m
+[37m14:34:29[36m [DEBUG] Populating method default.CreateFile(file, mode=w+) [37m(eons.py:697)[0m
+[37m14:34:29[36m [DEBUG] Populating method default.Copy(source, destination, root=/) [37m(eons.py:697)[0m
+[37m14:34:29[36m [DEBUG] Populating method default.Delete(target) [37m(eons.py:697)[0m
+[37m14:34:29[36m [DEBUG] Populating method default.RunCommand(command, saveout=False, raiseExceptions=True) [37m(eons.py:697)[0m
+[37m14:34:29[36m [DEBUG] rootPath for default is /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local [37m(ebbs.py:172)[0m
+[37m14:34:29[36m [DEBUG] buildPath for default is /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local [37m(ebbs.py:177)[0m
+[37m14:34:29[36m [DEBUG] srcPath for default is None [37m(ebbs.py:193)[0m
+[37m14:34:29[36m [DEBUG] incPath for default is None [37m(ebbs.py:193)[0m
+[37m14:34:29[36m [DEBUG] depPath for default is None [37m(ebbs.py:193)[0m
+[37m14:34:29[36m [DEBUG] libPath for default is None [37m(ebbs.py:193)[0m
+[37m14:34:29[36m [DEBUG] exePath for default is None [37m(ebbs.py:193)[0m
+[37m14:34:29[36m [DEBUG] testPath for default is None [37m(ebbs.py:193)[0m
+[37m14:34:29[36m [DEBUG] Using executor config: {'clear_build_path': True, 'build_in': 'tinc', 'next': [{'build': 'in_container', 'build_in': 'tinc.tome', 'run_when_any': ['update'], 'config': {'clear_build_path': False, 'name': 'tinc', 'type': 'tome', 'image': 'eons/generic.builder.img', 'copy_env': ['repo_username', 'repo_password'], 'next': [{'build': 'arbitrary', 'copy': [{'../../../../ext': 'ext'}], 'config': {'commands': ['cd /mnt/env/ext/tinc-1.1pre17; ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var; make; make install', 'mkdir /mnt/run/build/BUILD_COMPLETE', 'mkdir /mnt/run/build/BUILD_COMPLETE/bin', 'cp -rav /usr/sbin/tinc /mnt/run/build/BUILD_COMPLETE/bin/', 'cp -rav /usr/sbin/tincd /mnt/run/build/BUILD_COMPLETE/bin/'], 'next': [{'build': 'publish', 'build_in': 'BUILD_COMPLETE', 'config': {'clear_build_path': False, 'type': 'tome', 'visibility': 'public'}}]}}]}}, {'build': 'docker', 'build_in': 'docker', 'config': {'base_image': 'eons/base.img', 'image_name': 'eons/network.enabled.img', 'image_os': 'alpine', 'emi': {'install': ['tinc']}, 'install': ['lzo'], 'also': ['EXPOSE 655'], 'tags': ['latest']}}]} [37m(ebbs.py:209)[0m
+[37m14:34:29[36m [DEBUG] Fetching name from ['args', 'config', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...default got name from args. [37m(eons.py:576)[0m
+[37m14:34:29[36m [DEBUG] Setting (<class 'str'>) projectName = network.enabled [37m(eons.py:538)[0m
+[37m14:34:29[36m [DEBUG] Fetching type from ['args', 'config', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...default got type from args. [37m(eons.py:576)[0m
+[37m14:34:29[36m [DEBUG] Setting (<class 'str'>) projectType = img [37m(eons.py:538)[0m
+[37m14:34:29[36m [DEBUG] Fetching clear_build_path from ['args', 'config']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...default got clear_build_path from config. [37m(eons.py:576)[0m
+[37m14:34:29[36m [DEBUG] Fetching next from ['args', 'config']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...default got next from config. [37m(eons.py:576)[0m
+[37m14:34:29[36m [DEBUG] Setting (<class 'list'>) next = [{'build': 'in_container', 'build_in': 'tinc.tome', 'run_when_any': ['update'], 'config': {'clear_build_path': False, 'name': 'tinc', 'type': 'tome', 'image': 'eons/generic.builder.img', 'copy_env': ['repo_username', 'repo_password'], 'next': [{'build': 'arbitrary', 'copy': [{'../../../../ext': 'ext'}], 'config': {'commands': ['cd /mnt/env/ext/tinc-1.1pre17; ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var; make; make install', 'mkdir /mnt/run/build/BUILD_COMPLETE', 'mkdir /mnt/run/build/BUILD_COMPLETE/bin', 'cp -rav /usr/sbin/tinc /mnt/run/build/BUILD_COMPLETE/bin/', 'cp -rav /usr/sbin/tincd /mnt/run/build/BUILD_COMPLETE/bin/'], 'next': [{'build': 'publish', 'build_in': 'BUILD_COMPLETE', 'config': {'clear_build_path': False, 'type': 'tome', 'visibility': 'public'}}]}}]}}, {'build': 'docker', 'build_in': 'docker', 'config': {'base_image': 'eons/base.img', 'image_name': 'eons/network.enabled.img', 'image_os': 'alpine', 'emi': {'install': ['tinc']}, 'install': ['lzo'], 'also': ['EXPOSE 655'], 'tags': ['latest']}}] [37m(eons.py:538)[0m
+[37m14:34:29[36m [DEBUG] Setting values from args: {} [37m(eons.py:734)[0m
+[37m14:34:29[36m [DEBUG] <---- Preparing default ----> [37m(ebbs.py:358)[0m
+[37m14:34:29[36m [DEBUG] <---- Delete ----> [37m(eons.py:814)[0m
+[37m14:34:29[36m [DEBUG] Delete(('/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local',), {}) [37m(eons.py:819)[0m
+[37m14:34:29[36m [DEBUG] Setting values from args: {'target': '/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local'} [37m(eons.py:734)[0m
+[37m14:34:29[36m [DEBUG] Setting (<class 'str'>) target = /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local [37m(eons.py:538)[0m
+[37m14:34:29[36m [DEBUG] Deleting directory /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local [37m(:10)[0m
+[37m14:34:29[36m [DEBUG] >---- Delete complete ----< [37m(eons.py:867)[0m
+[37m14:34:29[36m [DEBUG] >---- Done Preparing default ----< [37m(ebbs.py:373)[0m
+[37m14:34:29[97m [INFO] Using default to build "network.enabled", a "img" in /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local [37m(ebbs.py:375)[0m
+[37m14:34:29[36m [DEBUG] <---- Building default ----> [37m(ebbs.py:377)[0m
+[37m14:34:29[36m [DEBUG] >---- Done Building default ----< [37m(ebbs.py:379)[0m
+[37m14:34:29[36m [DEBUG] <---- Preparing for next builder: in_container ----> [37m(ebbs.py:287)[0m
+[37m14:34:29[36m [DEBUG] Next build path is: /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/. [37m(ebbs.py:296)[0m
+[37m14:34:29[36m [DEBUG] writing: /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/./build.json [37m(ebbs.py:308)[0m
+[37m14:34:29[36m [DEBUG] >---- Completed preparation for: in_container ----< [37m(ebbs.py:318)[0m
+[37m14:34:29[36m [DEBUG] Executing in_container(path=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/., build_in=tinc.tome, events={'update'}, precursor=<build_default.default object at 0x7f0a0dbb85b0>) [37m(eons.py:2073)[0m
+[37m14:34:29[36m [DEBUG] Creating new in_container [37m(eons.py:94)[0m
+[37m14:34:29[36m [DEBUG] <---- in_container ----> [37m(eons.py:814)[0m
+[37m14:34:29[36m [DEBUG] in_container((), {'path': '/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/.', 'build_in': 'tinc.tome', 'events': {'update'}, 'precursor': <build_default.default object at 0x7f0a0dbb85b0>, 'executor': <ebbs.ebbs.EBBS object at 0x7f0a0ed42830>}) [37m(eons.py:819)[0m
+[37m14:34:29[36m [DEBUG] in_container was preceded by default [37m(eons.py:719)[0m
+[37m14:34:29[36m [DEBUG] Creating new <class 'eons.eons.Method'> from CreateFile [37m(eons.py:883)[0m
+[37m14:34:29[36m [DEBUG] Creating new <class 'eons.eons.Method'> from Copy [37m(eons.py:883)[0m
+[37m14:34:29[36m [DEBUG] Creating new <class 'eons.eons.Method'> from Delete [37m(eons.py:883)[0m
+[37m14:34:29[36m [DEBUG] Creating new <class 'eons.eons.Method'> from RunCommand [37m(eons.py:883)[0m
+[37m14:34:29[36m [DEBUG] Populating method in_container.CreateFile(file, mode=w+) [37m(eons.py:697)[0m
+[37m14:34:29[36m [DEBUG] Populating method in_container.Copy(source, destination, root=/) [37m(eons.py:697)[0m
+[37m14:34:29[36m [DEBUG] Populating method in_container.Delete(target) [37m(eons.py:697)[0m
+[37m14:34:29[36m [DEBUG] Populating method in_container.RunCommand(command, saveout=False, raiseExceptions=True) [37m(eons.py:697)[0m
+[37m14:34:29[36m [DEBUG] rootPath for in_container is /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local [37m(ebbs.py:172)[0m
+[37m14:34:29[36m [DEBUG] buildPath for in_container is /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome [37m(ebbs.py:177)[0m
+[37m14:34:29[36m [DEBUG] srcPath for in_container is None [37m(ebbs.py:193)[0m
+[37m14:34:29[36m [DEBUG] incPath for in_container is None [37m(ebbs.py:193)[0m
+[37m14:34:29[36m [DEBUG] depPath for in_container is None [37m(ebbs.py:193)[0m
+[37m14:34:29[36m [DEBUG] libPath for in_container is None [37m(ebbs.py:193)[0m
+[37m14:34:29[36m [DEBUG] exePath for in_container is None [37m(ebbs.py:193)[0m
+[37m14:34:29[36m [DEBUG] testPath for in_container is None [37m(ebbs.py:193)[0m
+[37m14:34:29[36m [DEBUG] Looking for local configuration: /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/build.json [37m(ebbs.py:214)[0m
+[37m14:34:29[36m [DEBUG] Got local config contents: {'clear_build_path': False, 'name': 'tinc', 'type': 'tome', 'image': 'eons/generic.builder.img', 'copy_env': ['repo_username', 'repo_password'], 'next': [{'build': 'arbitrary', 'copy': [{'../../../../ext': 'ext'}], 'config': {'commands': ['cd /mnt/env/ext/tinc-1.1pre17; ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var; make; make install', 'mkdir /mnt/run/build/BUILD_COMPLETE', 'mkdir /mnt/run/build/BUILD_COMPLETE/bin', 'cp -rav /usr/sbin/tinc /mnt/run/build/BUILD_COMPLETE/bin/', 'cp -rav /usr/sbin/tincd /mnt/run/build/BUILD_COMPLETE/bin/'], 'next': [{'build': 'publish', 'build_in': 'BUILD_COMPLETE', 'config': {'clear_build_path': False, 'type': 'tome', 'visibility': 'public'}}]}}]} [37m(ebbs.py:219)[0m
+[37m14:34:29[36m [DEBUG] Fetching name from ['args', 'config', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...in_container got name from config. [37m(eons.py:576)[0m
+[37m14:34:29[36m [DEBUG] Setting (<class 'str'>) projectName = tinc [37m(eons.py:538)[0m
+[37m14:34:29[36m [DEBUG] Fetching type from ['args', 'config', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...in_container got type from config. [37m(eons.py:576)[0m
+[37m14:34:29[36m [DEBUG] Setting (<class 'str'>) projectType = tome [37m(eons.py:538)[0m
+[37m14:34:29[36m [DEBUG] Fetching clear_build_path from ['args', 'config']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...in_container got clear_build_path from config. [37m(eons.py:576)[0m
+[37m14:34:29[36m [DEBUG] Fetching next from ['args', 'config']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...in_container got next from config. [37m(eons.py:576)[0m
+[37m14:34:29[36m [DEBUG] Setting (<class 'list'>) next = [{'build': 'arbitrary', 'copy': [{'../../../../ext': 'ext'}], 'config': {'commands': ['cd /mnt/env/ext/tinc-1.1pre17; ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var; make; make install', 'mkdir /mnt/run/build/BUILD_COMPLETE', 'mkdir /mnt/run/build/BUILD_COMPLETE/bin', 'cp -rav /usr/sbin/tinc /mnt/run/build/BUILD_COMPLETE/bin/', 'cp -rav /usr/sbin/tincd /mnt/run/build/BUILD_COMPLETE/bin/'], 'next': [{'build': 'publish', 'build_in': 'BUILD_COMPLETE', 'config': {'clear_build_path': False, 'type': 'tome', 'visibility': 'public'}}]}}] [37m(eons.py:538)[0m
+[37m14:34:29[36m [DEBUG] Setting values from args: {} [37m(eons.py:734)[0m
+[37m14:34:29[36m [DEBUG] Fetching image from ['args', 'config', 'precursor', 'executor', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...in_container got image from config. [37m(eons.py:576)[0m
+[37m14:34:29[36m [DEBUG] Setting (<class 'str'>) image = eons/generic.builder.img [37m(eons.py:538)[0m
+[37m14:34:29[36m [DEBUG] Fetching next from ['args', 'config', 'precursor', 'executor', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...in_container got next from config. [37m(eons.py:576)[0m
+[37m14:34:29[36m [DEBUG] Setting (<class 'list'>) next = [{'build': 'arbitrary', 'copy': [{'../../../../ext': 'ext'}], 'config': {'commands': ['cd /mnt/env/ext/tinc-1.1pre17; ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var; make; make install', 'mkdir /mnt/run/build/BUILD_COMPLETE', 'mkdir /mnt/run/build/BUILD_COMPLETE/bin', 'cp -rav /usr/sbin/tinc /mnt/run/build/BUILD_COMPLETE/bin/', 'cp -rav /usr/sbin/tincd /mnt/run/build/BUILD_COMPLETE/bin/'], 'next': [{'build': 'publish', 'build_in': 'BUILD_COMPLETE', 'config': {'clear_build_path': False, 'type': 'tome', 'visibility': 'public'}}]}}] [37m(eons.py:538)[0m
+[37m14:34:29[36m [DEBUG] Fetching cpus from ['args', 'config', 'precursor', 'executor', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...Eons Basic Build System detected loop (['in_container', 'default', 'Eons Basic Build System', 'proxy']) while trying to fetch cpus; using default: 1. [37m(eons.py:555)[0m
+[37m14:34:29[36m [DEBUG] ...default detected loop (['in_container', 'default', 'Eons Basic Build System', 'proxy']) while trying to fetch cpus; using default: 1. [37m(eons.py:555)[0m
+[37m14:34:29[36m [DEBUG] ...Eons Basic Build System detected loop (['in_container', 'default', 'Eons Basic Build System', 'proxy']) while trying to fetch cpus; using default: 1. [37m(eons.py:555)[0m
+[37m14:34:29[36m [DEBUG] ...in_container could not find cpus; using default: 1. [37m(eons.py:582)[0m
+[37m14:34:29[36m [DEBUG] Setting (<class 'int'>) cpus = 1 [37m(eons.py:538)[0m
+[37m14:34:29[36m [DEBUG] Fetching copy_env from ['args', 'config', 'precursor', 'executor', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...in_container got copy_env from config. [37m(eons.py:576)[0m
+[37m14:34:29[36m [DEBUG] Setting (<class 'list'>) copy_env = ['repo_username', 'repo_password'] [37m(eons.py:538)[0m
+[37m14:34:29[36m [DEBUG] <---- Preparing in_container ----> [37m(ebbs.py:358)[0m
+[37m14:34:29[36m [DEBUG] >---- Done Preparing in_container ----< [37m(ebbs.py:373)[0m
+[37m14:34:29[97m [INFO] Using in_container to build "tinc", a "tome" in /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome [37m(ebbs.py:375)[0m
+[37m14:34:29[36m [DEBUG] <---- Building in_container ----> [37m(ebbs.py:377)[0m
+[37m14:34:29[36m [DEBUG] >---- Done Building in_container ----< [37m(ebbs.py:379)[0m
+[37m14:34:29[97m [INFO] Setting up environment for containerized building. [37m(in_container.py:38)[0m
+[37m14:34:29[36m [DEBUG] <---- CreateFile ----> [37m(eons.py:814)[0m
+[37m14:34:29[36m [DEBUG] CreateFile(('host.env',), {}) [37m(eons.py:819)[0m
+[37m14:34:29[36m [DEBUG] Setting values from args: {'file': 'host.env'} [37m(eons.py:734)[0m
+[37m14:34:29[36m [DEBUG] Setting (<class 'str'>) file = host.env [37m(eons.py:538)[0m
+[37m14:34:29[36m [DEBUG] Fetching mode from ['args', 'globals', 'config', 'precursor', 'executor', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...CreateFile could not find mode; using default: w+. [37m(eons.py:582)[0m
+[37m14:34:29[36m [DEBUG] Setting (<class 'str'>) mode = w+ [37m(eons.py:538)[0m
+[37m14:34:29[36m [DEBUG] >---- CreateFile complete ----< [37m(eons.py:867)[0m
+[37m14:34:29[36m [DEBUG] Copying /home/goat/git/infrastructure-tech/network_enabled.img/build/eons to /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/eons [37m(in_container.py:44)[0m
+[37m14:34:29[36m [DEBUG] <---- Preparing for next builder: arbitrary ----> [37m(ebbs.py:287)[0m
+[37m14:34:29[36m [DEBUG] Next build path is: /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/. [37m(ebbs.py:296)[0m
+[37m14:34:29[36m [DEBUG] <---- Copy ----> [37m(eons.py:814)[0m
+[37m14:34:29[36m [DEBUG] Copy(('../../../../ext', 'ext'), {'root': PosixPath('/home/goat/git/infrastructure-tech/network_enabled.img')}) [37m(eons.py:819)[0m
+[37m14:34:29[36m [DEBUG] Setting values from args: {'source': '../../../../ext', 'destination': 'ext'} [37m(eons.py:734)[0m
+[37m14:34:29[36m [DEBUG] Setting (<class 'str'>) source = ../../../../ext [37m(eons.py:538)[0m
+[37m14:34:29[36m [DEBUG] Setting (<class 'str'>) destination = ext [37m(eons.py:538)[0m
+[37m14:34:29[36m [DEBUG] Fetching root from ['args', 'globals', 'config', 'precursor', 'executor', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...Copy got root from args. [37m(eons.py:576)[0m
+[37m14:34:29[36m [DEBUG] Setting (<class 'pathlib.PosixPath'>) root = /home/goat/git/infrastructure-tech/network_enabled.img [37m(eons.py:538)[0m
+[37m14:34:29[36m [DEBUG] Copying directory /home/goat/git/infrastructure-tech/network_enabled.img/ext to /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/ext [37m(:22)[0m
+[37m14:34:29[36m [DEBUG] >---- Copy complete ----< [37m(eons.py:867)[0m
+[37m14:34:29[36m [DEBUG] writing: /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/./build.json [37m(ebbs.py:308)[0m
+[37m14:34:29[36m [DEBUG] Adding to config: name = tinc [37m(ebbs.py:313)[0m
+[37m14:34:29[36m [DEBUG] Adding to config: type = tome [37m(ebbs.py:313)[0m
+[37m14:34:29[36m [DEBUG] >---- Completed preparation for: arbitrary ----< [37m(ebbs.py:318)[0m
+[37m14:34:29[36m [DEBUG] Preparing to run (arbitrary) in /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/. within docker image eons/generic.builder.img [37m(in_container.py:56)[0m
+[37m14:34:29[36m [DEBUG] <---- CreateFile ----> [37m(eons.py:814)[0m
+[37m14:34:29[36m [DEBUG] CreateFile(('run-ebbs.sh',), {}) [37m(eons.py:819)[0m
+[37m14:34:29[36m [DEBUG] Setting values from args: {'file': 'run-ebbs.sh'} [37m(eons.py:734)[0m
+[37m14:34:29[36m [DEBUG] Setting (<class 'str'>) file = run-ebbs.sh [37m(eons.py:538)[0m
+[37m14:34:29[36m [DEBUG] Fetching mode from ['args', 'globals', 'config', 'precursor', 'executor', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...CreateFile could not find mode; using default: w+. [37m(eons.py:582)[0m
+[37m14:34:29[36m [DEBUG] Setting (<class 'str'>) mode = w+ [37m(eons.py:538)[0m
+[37m14:34:29[36m [DEBUG] >---- CreateFile complete ----< [37m(eons.py:867)[0m
+[37m14:34:29[36m [DEBUG] <---- RunCommand ----> [37m(eons.py:814)[0m
+[37m14:34:29[36m [DEBUG] RunCommand(('docker run --rm --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome,dst=/mnt/env --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/.,dst=/mnt/run --mount type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock -w /mnt/run --cpus 1 --entrypoint /mnt/run/run-ebbs.sh --env-file /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/host.env eons/generic.builder.img\n',), {}) [37m(eons.py:819)[0m
+[37m14:34:29[36m [DEBUG] Setting values from args: {'command': 'docker run --rm --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome,dst=/mnt/env --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/.,dst=/mnt/run --mount type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock -w /mnt/run --cpus 1 --entrypoint /mnt/run/run-ebbs.sh --env-file /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/host.env eons/generic.builder.img\n'} [37m(eons.py:734)[0m
+[37m14:34:29[36m [DEBUG] Setting (<class 'str'>) command = docker run --rm --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome,dst=/mnt/env --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/.,dst=/mnt/run --mount type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock -w /mnt/run --cpus 1 --entrypoint /mnt/run/run-ebbs.sh --env-file /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/host.env eons/generic.builder.img
+ [37m(eons.py:538)[0m
+[37m14:34:29[36m [DEBUG] Fetching saveout from ['args', 'globals', 'config', 'precursor', 'executor', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...RunCommand could not find saveout; using default: False. [37m(eons.py:582)[0m
+[37m14:34:29[36m [DEBUG] Setting (<class 'bool'>) saveout = False [37m(eons.py:538)[0m
+[37m14:34:29[36m [DEBUG] Fetching raiseExceptions from ['args', 'globals', 'config', 'precursor', 'executor', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:29[36m [DEBUG] ...Eons Basic Build System got raiseExceptions from this. [37m(eons.py:576)[0m
+[37m14:34:29[36m [DEBUG] ...RunCommand got raiseExceptions from executor. [37m(eons.py:576)[0m
+[37m14:34:29[36m [DEBUG] Setting (<class 'bool'>) raiseExceptions = True [37m(eons.py:538)[0m
+[37m14:34:29[36m [DEBUG] ================ Running this.command: docker run --rm --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome,dst=/mnt/env --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/.,dst=/mnt/run --mount type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock -w /mnt/run --cpus 1 --entrypoint /mnt/run/run-ebbs.sh --env-file /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/host.env eons/generic.builder.img
+ ================ [37m(:3)[0m
+[37m14:34:30[36m [DEBUG] | Requirement already satisfied: eons in /usr/lib/python3.10/site-packages (2.3.4) [37m(:11)[0m
+[37m14:34:30[36m [DEBUG] | Requirement already satisfied: tqdm in /usr/lib/python3.10/site-packages (from eons) (4.65.0) [37m(:11)[0m
+[37m14:34:30[36m [DEBUG] | Requirement already satisfied: requests in /usr/lib/python3.10/site-packages (from eons) (2.28.2) [37m(:11)[0m
+[37m14:34:30[36m [DEBUG] | Requirement already satisfied: jsonpickle in /usr/lib/python3.10/site-packages (from eons) (3.0.1) [37m(:11)[0m
+[37m14:34:30[36m [DEBUG] | Requirement already satisfied: pyyaml in /usr/lib/python3.10/site-packages (from eons) (6.0) [37m(:11)[0m
+[37m14:34:30[36m [DEBUG] | Requirement already satisfied: urllib3<1.27,>=1.21.1 in /usr/lib/python3.10/site-packages (from requests->eons) (1.26.15) [37m(:11)[0m
+[37m14:34:30[36m [DEBUG] | Requirement already satisfied: charset-normalizer<4,>=2 in /usr/lib/python3.10/site-packages (from requests->eons) (3.1.0) [37m(:11)[0m
+[37m14:34:30[36m [DEBUG] | Requirement already satisfied: certifi>=2017.4.17 in /usr/lib/python3.10/site-packages (from requests->eons) (2022.12.7) [37m(:11)[0m
+[37m14:34:30[36m [DEBUG] | Requirement already satisfied: idna<4,>=2.5 in /usr/lib/python3.10/site-packages (from requests->eons) (3.4) [37m(:11)[0m
+[37m14:34:30[36m [DEBUG] | WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv [37m(:11)[0m
+[37m14:34:30[36m [DEBUG] | Requirement already satisfied: ebbs in /usr/lib/python3.10/site-packages (2.2.15) [37m(:11)[0m
+[37m14:34:30[36m [DEBUG] | Requirement already satisfied: eons in /usr/lib/python3.10/site-packages (from ebbs) (2.3.4) [37m(:11)[0m
+[37m14:34:30[36m [DEBUG] | Requirement already satisfied: jsonpickle in /usr/lib/python3.10/site-packages (from ebbs) (3.0.1) [37m(:11)[0m
+[37m14:34:30[36m [DEBUG] | Requirement already satisfied: requests in /usr/lib/python3.10/site-packages (from eons->ebbs) (2.28.2) [37m(:11)[0m
+[37m14:34:30[36m [DEBUG] | Requirement already satisfied: tqdm in /usr/lib/python3.10/site-packages (from eons->ebbs) (4.65.0) [37m(:11)[0m
+[37m14:34:30[36m [DEBUG] | Requirement already satisfied: pyyaml in /usr/lib/python3.10/site-packages (from eons->ebbs) (6.0) [37m(:11)[0m
+[37m14:34:30[36m [DEBUG] | Requirement already satisfied: urllib3<1.27,>=1.21.1 in /usr/lib/python3.10/site-packages (from requests->eons->ebbs) (1.26.15) [37m(:11)[0m
+[37m14:34:30[36m [DEBUG] | Requirement already satisfied: idna<4,>=2.5 in /usr/lib/python3.10/site-packages (from requests->eons->ebbs) (3.4) [37m(:11)[0m
+[37m14:34:30[36m [DEBUG] | Requirement already satisfied: certifi>=2017.4.17 in /usr/lib/python3.10/site-packages (from requests->eons->ebbs) (2022.12.7) [37m(:11)[0m
+[37m14:34:30[36m [DEBUG] | Requirement already satisfied: charset-normalizer<4,>=2 in /usr/lib/python3.10/site-packages (from requests->eons->ebbs) (3.1.0) [37m(:11)[0m
+[37m14:34:30[36m [DEBUG] | WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | Requirement already satisfied: eot in /usr/lib/python3.10/site-packages (0.0.6) [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | Requirement already satisfied: eons in /usr/lib/python3.10/site-packages (from eot) (2.3.4) [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | Requirement already satisfied: pyyaml in /usr/lib/python3.10/site-packages (from eons->eot) (6.0) [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | Requirement already satisfied: requests in /usr/lib/python3.10/site-packages (from eons->eot) (2.28.2) [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | Requirement already satisfied: tqdm in /usr/lib/python3.10/site-packages (from eons->eot) (4.65.0) [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | Requirement already satisfied: jsonpickle in /usr/lib/python3.10/site-packages (from eons->eot) (3.0.1) [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | Requirement already satisfied: urllib3<1.27,>=1.21.1 in /usr/lib/python3.10/site-packages (from requests->eons->eot) (1.26.15) [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | Requirement already satisfied: idna<4,>=2.5 in /usr/lib/python3.10/site-packages (from requests->eons->eot) (3.4) [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | Requirement already satisfied: charset-normalizer<4,>=2 in /usr/lib/python3.10/site-packages (from requests->eons->eot) (3.1.0) [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | Requirement already satisfied: certifi>=2017.4.17 in /usr/lib/python3.10/site-packages (from requests->eons->eot) (2022.12.7) [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Populating config from build.json [37m(eons.py:1955)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Fetching verbosity from ['args', 'config', 'environment']... [37m(eons.py:567)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] ...Eons Basic Build System could not find verbosity; using default: 0. [37m(eons.py:582)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Fetching log_file from ['args', 'config', 'environment']... [37m(eons.py:567)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] ...Eons Basic Build System could not find log_file; using default: None. [37m(eons.py:582)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Setting (<class 'NoneType'>) log_file = None [37m(eons.py:538)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] <---- Eons Basic Build System (log level: 10) ----> [37m(eons.py:2036)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Got extra arguments: {'.': '--name', 'tinc': '--type'} [37m(eons.py:2037)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Got config contents: {'commands': ['cd /mnt/env/ext/tinc-1.1pre17; ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var; make; make install', 'mkdir /mnt/run/build/BUILD_COMPLETE', 'mkdir /mnt/run/build/BUILD_COMPLETE/bin', 'cp -rav /usr/sbin/tinc /mnt/run/build/BUILD_COMPLETE/bin/', 'cp -rav /usr/sbin/tincd /mnt/run/build/BUILD_COMPLETE/bin/'], 'next': [{'build': 'publish', 'build_in': 'BUILD_COMPLETE', 'config': {'clear_build_path': False, 'type': 'tome', 'visibility': 'public'}}], 'name': 'tinc', 'type': 'tome'} [37m(eons.py:2038)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Fetching no_repo from ['this', 'args', 'config']... [37m(eons.py:567)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] ...Eons Basic Build System could not find no_repo; using default: False. [37m(eons.py:582)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Fetching repo_online from ['this', 'args', 'globals', 'config', 'environment']... [37m(eons.py:567)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] ...Eons Basic Build System could not find repo_online; using default: True. [37m(eons.py:582)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Fetching repo_store from ['this', 'args', 'globals', 'config', 'environment']... [37m(eons.py:567)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] ...Eons Basic Build System could not find repo_store; using default: /mnt/run/eons. [37m(eons.py:582)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Fetching repo_url from ['this', 'args', 'globals', 'config', 'environment']... [37m(eons.py:567)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] ...Eons Basic Build System could not find repo_url; using default: https://api.infrastructure.tech/v1/package. [37m(eons.py:582)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Fetching repo_username from ['this', 'args', 'globals', 'config', 'environment']... [37m(eons.py:567)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] ...Eons Basic Build System got repo_username from environment. [37m(eons.py:576)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Fetching repo_password from ['this', 'args', 'globals', 'config', 'environment']... [37m(eons.py:567)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] ...Eons Basic Build System got repo_password from environment. [37m(eons.py:576)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Fetching next from ['args', 'config']... [37m(eons.py:567)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] ...Eons Basic Build System got next from config. [37m(eons.py:576)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Setting (<class 'list'>) next = [{'build': 'publish', 'build_in': 'BUILD_COMPLETE', 'config': {'clear_build_path': False, 'type': 'tome', 'visibility': 'public'}}] [37m(eons.py:538)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Setting values from args: {} [37m(eons.py:734)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Loading SelfRegistering classes in /mnt/run/eons [37m(eons.py:107)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Available modules: ['__pycache__', 'arbitrary.py', 'in_container.py', 'proxy.py'] [37m(eons.py:108)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] arbitrary imported. [37m(eons.py:123)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] in_container imported. [37m(eons.py:123)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] proxy imported. [37m(eons.py:123)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Creating new ExecutorTracker: <eons.eons.ExecutorTracker object at 0x7f0af800fdc0> [37m(eons.py:1256)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Now tracking Executor: <ebbs.ebbs.EBBS object at 0x7f0af7f8f490> [37m(eons.py:1282)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Fetching path from ['this', 'args', 'globals', 'config', 'environment']... [37m(eons.py:567)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] ...Eons Basic Build System could not find path; using default: ../. [37m(eons.py:582)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Fetching build_in from ['this', 'args', 'globals', 'config', 'environment']... [37m(eons.py:567)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] ...Eons Basic Build System could not find build_in; using default: build. [37m(eons.py:582)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Executing arbitrary(path=/mnt/run, build_in=build, events={'containerized', 'update'}, .=--name, tinc=--type) [37m(eons.py:2073)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Creating new arbitrary [37m(eons.py:94)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] <---- arbitrary ----> [37m(eons.py:814)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] arbitrary((), {'path': '/mnt/run', 'build_in': 'build', 'events': {'containerized', 'update'}, '.': '--name', 'tinc': '--type', 'executor': <ebbs.ebbs.EBBS object at 0x7f0af7f8f490>}) [37m(eons.py:819)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] arbitrary was preceded by None [37m(eons.py:722)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Creating new <class 'eons.eons.Method'> from CreateFile [37m(eons.py:883)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Creating new <class 'eons.eons.Method'> from Copy [37m(eons.py:883)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Creating new <class 'eons.eons.Method'> from Delete [37m(eons.py:883)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Creating new <class 'eons.eons.Method'> from RunCommand [37m(eons.py:883)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Populating method arbitrary.CreateFile(file, mode=w+) [37m(eons.py:697)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Populating method arbitrary.Copy(source, destination, root=/) [37m(eons.py:697)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Populating method arbitrary.Delete(target) [37m(eons.py:697)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Populating method arbitrary.RunCommand(command, saveout=False, raiseExceptions=True) [37m(eons.py:697)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] rootPath for arbitrary is /mnt/run [37m(ebbs.py:172)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] buildPath for arbitrary is /mnt/run/build [37m(ebbs.py:177)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] srcPath for arbitrary is None [37m(ebbs.py:193)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] incPath for arbitrary is None [37m(ebbs.py:193)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] depPath for arbitrary is None [37m(ebbs.py:193)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] libPath for arbitrary is None [37m(ebbs.py:193)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] exePath for arbitrary is None [37m(ebbs.py:193)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] testPath for arbitrary is None [37m(ebbs.py:193)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Looking for local configuration: /mnt/run/build.json [37m(ebbs.py:214)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Got local config contents: {'commands': ['cd /mnt/env/ext/tinc-1.1pre17; ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var; make; make install', 'mkdir /mnt/run/build/BUILD_COMPLETE', 'mkdir /mnt/run/build/BUILD_COMPLETE/bin', 'cp -rav /usr/sbin/tinc /mnt/run/build/BUILD_COMPLETE/bin/', 'cp -rav /usr/sbin/tincd /mnt/run/build/BUILD_COMPLETE/bin/'], 'next': [{'build': 'publish', 'build_in': 'BUILD_COMPLETE', 'config': {'clear_build_path': False, 'type': 'tome', 'visibility': 'public'}}], 'name': 'tinc', 'type': 'tome'} [37m(ebbs.py:219)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] ...Eons Basic Build System got name from config. [37m(eons.py:576)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Fetching name from ['args', 'config', 'environment']... [37m(eons.py:567)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] ...arbitrary got name from config. [37m(eons.py:576)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Setting (<class 'str'>) projectName = tinc [37m(eons.py:538)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] ...Eons Basic Build System got type from config. [37m(eons.py:576)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Fetching type from ['args', 'config', 'environment']... [37m(eons.py:567)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] ...arbitrary got type from config. [37m(eons.py:576)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Setting (<class 'str'>) projectType = tome [37m(eons.py:538)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Fetching clear_build_path from ['args', 'config']... [37m(eons.py:567)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] ...arbitrary could not find clear_build_path; using default: False. [37m(eons.py:582)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Fetching next from ['args', 'config']... [37m(eons.py:567)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] ...arbitrary got next from config. [37m(eons.py:576)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Setting (<class 'list'>) next = [{'build': 'publish', 'build_in': 'BUILD_COMPLETE', 'config': {'clear_build_path': False, 'type': 'tome', 'visibility': 'public'}}] [37m(eons.py:538)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Setting values from args: {} [37m(eons.py:734)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Fetching commands from ['args', 'config', 'precursor', 'executor', 'environment']... [37m(eons.py:567)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] ...arbitrary got commands from config. [37m(eons.py:576)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Setting (<class 'list'>) commands = ['cd /mnt/env/ext/tinc-1.1pre17; ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var; make; make install', 'mkdir /mnt/run/build/BUILD_COMPLETE', 'mkdir /mnt/run/build/BUILD_COMPLETE/bin', 'cp -rav /usr/sbin/tinc /mnt/run/build/BUILD_COMPLETE/bin/', 'cp -rav /usr/sbin/tincd /mnt/run/build/BUILD_COMPLETE/bin/'] [37m(eons.py:538)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] <---- Preparing arbitrary ----> [37m(ebbs.py:358)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] >---- Done Preparing arbitrary ----< [37m(ebbs.py:373)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[97m [INFO] Using arbitrary to build "tinc", a "tome" in /mnt/run/build [37m(ebbs.py:375)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] <---- Building arbitrary ----> [37m(ebbs.py:377)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] <---- RunCommand ----> [37m(eons.py:814)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] RunCommand(('cd /mnt/env/ext/tinc-1.1pre17; ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var; make; make install',), {}) [37m(eons.py:819)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Setting values from args: {'command': 'cd /mnt/env/ext/tinc-1.1pre17; ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var; make; make install'} [37m(eons.py:734)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Setting (<class 'str'>) command = cd /mnt/env/ext/tinc-1.1pre17; ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var; make; make install [37m(eons.py:538)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Fetching saveout from ['args', 'globals', 'config', 'precursor', 'executor', 'environment']... [37m(eons.py:567)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] ...RunCommand could not find saveout; using default: False. [37m(eons.py:582)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Setting (<class 'bool'>) saveout = False [37m(eons.py:538)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Fetching raiseExceptions from ['args', 'globals', 'config', 'precursor', 'executor', 'environment']... [37m(eons.py:567)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] ...Eons Basic Build System got raiseExceptions from this. [37m(eons.py:576)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] ...RunCommand got raiseExceptions from executor. [37m(eons.py:576)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] Setting (<class 'bool'>) raiseExceptions = True [37m(eons.py:538)[0m [37m(:11)[0m
+[37m14:34:31[36m [DEBUG] | [37m21:34:31[36m [DEBUG] ================ Running this.command: cd /mnt/env/ext/tinc-1.1pre17; ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var; make; make install ================ [37m(:3)[0m [37m(:11)[0m
+[37m14:34:32[36m [DEBUG] | [37m21:34:32[36m [DEBUG] | checking for a BSD-compatible install... /usr/bin/install -c [37m(:11)[0m [37m(:11)[0m
+[37m14:34:32[36m [DEBUG] | [37m21:34:32[36m [DEBUG] | checking whether build environment is sane... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:32[36m [DEBUG] | [37m21:34:32[36m [DEBUG] | checking for a thread-safe mkdir -p... ./install-sh -c -d [37m(:11)[0m [37m(:11)[0m
+[37m14:34:32[36m [DEBUG] | [37m21:34:32[36m [DEBUG] | checking for gawk... no [37m(:11)[0m [37m(:11)[0m
+[37m14:34:32[36m [DEBUG] | [37m21:34:32[36m [DEBUG] | checking for mawk... no [37m(:11)[0m [37m(:11)[0m
+[37m14:34:32[36m [DEBUG] | [37m21:34:32[36m [DEBUG] | checking for nawk... no [37m(:11)[0m [37m(:11)[0m
+[37m14:34:32[36m [DEBUG] | [37m21:34:32[36m [DEBUG] | checking for awk... awk [37m(:11)[0m [37m(:11)[0m
+[37m14:34:32[36m [DEBUG] | [37m21:34:32[36m [DEBUG] | checking whether make sets $(MAKE)... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:32[36m [DEBUG] | [37m21:34:32[36m [DEBUG] | checking whether make supports nested variables... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:32[36m [DEBUG] | [37m21:34:32[36m [DEBUG] | checking whether make supports nested variables... (cached) yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:32[36m [DEBUG] | [37m21:34:32[36m [DEBUG] | checking whether make supports the include directive... yes (GNU style) [37m(:11)[0m [37m(:11)[0m
+[37m14:34:32[36m [DEBUG] | [37m21:34:32[36m [DEBUG] | checking for gcc... gcc [37m(:11)[0m [37m(:11)[0m
+[37m14:34:32[36m [DEBUG] | [37m21:34:32[36m [DEBUG] | checking whether the C compiler works... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:32[36m [DEBUG] | [37m21:34:32[36m [DEBUG] | checking for C compiler default output file name... a.out [37m(:11)[0m [37m(:11)[0m
+[37m14:34:32[36m [DEBUG] | [37m21:34:32[36m [DEBUG] | checking for suffix of executables...  [37m(:11)[0m [37m(:11)[0m
+[37m14:34:32[36m [DEBUG] | [37m21:34:32[36m [DEBUG] | checking whether we are cross compiling... no [37m(:11)[0m [37m(:11)[0m
+[37m14:34:32[36m [DEBUG] | [37m21:34:32[36m [DEBUG] | checking for suffix of object files... o [37m(:11)[0m [37m(:11)[0m
+[37m14:34:32[36m [DEBUG] | [37m21:34:32[36m [DEBUG] | checking whether we are using the GNU C compiler... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:32[36m [DEBUG] | [37m21:34:32[36m [DEBUG] | checking whether gcc accepts -g... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:32[36m [DEBUG] | [37m21:34:32[36m [DEBUG] | checking for gcc option to accept ISO C89... none needed [37m(:11)[0m [37m(:11)[0m
+[37m14:34:32[36m [DEBUG] | [37m21:34:32[36m [DEBUG] | checking whether gcc understands -c and -o together... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:32[36m [DEBUG] | [37m21:34:32[36m [DEBUG] | checking dependency style of gcc... gcc3 [37m(:11)[0m [37m(:11)[0m
+[37m14:34:32[36m [DEBUG] | [37m21:34:32[36m [DEBUG] | checking how to run the C preprocessor... gcc -E [37m(:11)[0m [37m(:11)[0m
+[37m14:34:32[36m [DEBUG] | [37m21:34:32[36m [DEBUG] | checking for grep that handles long lines and -e... /bin/grep [37m(:11)[0m [37m(:11)[0m
+[37m14:34:32[36m [DEBUG] | [37m21:34:32[36m [DEBUG] | checking for egrep... /bin/grep -E [37m(:11)[0m [37m(:11)[0m
+[37m14:34:32[36m [DEBUG] | [37m21:34:32[36m [DEBUG] | checking for ANSI C header files... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:32[36m [DEBUG] | [37m21:34:32[36m [DEBUG] | checking for sys/types.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:32[36m [DEBUG] | [37m21:34:32[36m [DEBUG] | checking for sys/stat.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:32[36m [DEBUG] | [37m21:34:32[36m [DEBUG] | checking for stdlib.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:32[36m [DEBUG] | [37m21:34:32[36m [DEBUG] | checking for string.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:32[36m [DEBUG] | [37m21:34:32[36m [DEBUG] | checking for memory.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:32[36m [DEBUG] | [37m21:34:32[36m [DEBUG] | checking for strings.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:32[36m [DEBUG] | [37m21:34:32[36m [DEBUG] | checking for inttypes.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:32[36m [DEBUG] | [37m21:34:32[36m [DEBUG] | checking for stdint.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:32[36m [DEBUG] | [37m21:34:32[36m [DEBUG] | checking for unistd.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking minix/config.h usability... no [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking minix/config.h presence... no [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking for minix/config.h... no [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking whether it is safe to define __EXTENSIONS__... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking for gcc option to accept ISO C99... none needed [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking how to run the C preprocessor... gcc -E [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking for a sed that does not truncate output... /bin/sed [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking whether to build with code coverage support... no [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking build system type... x86_64-pc-linux-musl [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking host system type... x86_64-pc-linux-musl [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking CFLAGS for maximum warnings... -Wall [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking whether C compiler accepts -DFORTIFY_SOURCE=2... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking whether C compiler accepts -fwrapv... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking whether C compiler accepts -fPIE... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking whether the linker accepts -pie... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking whether the linker accepts -Wl,-z,relro... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking whether the linker accepts -Wl,-z,now... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking syslog.h usability... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking syslog.h presence... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking for syslog.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking sys/file.h usability... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking sys/file.h presence... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking for sys/file.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking sys/ioctl.h usability... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking sys/ioctl.h presence... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking for sys/ioctl.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking sys/mman.h usability... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking sys/mman.h presence... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking for sys/mman.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking sys/param.h usability... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking sys/param.h presence... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking for sys/param.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking sys/resource.h usability... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking sys/resource.h presence... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking for sys/resource.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking sys/socket.h usability... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking sys/socket.h presence... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking for sys/socket.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking sys/time.h usability... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking sys/time.h presence... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking for sys/time.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking sys/un.h usability... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking sys/un.h presence... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking for sys/un.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking sys/wait.h usability... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking sys/wait.h presence... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking for sys/wait.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking netdb.h usability... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking netdb.h presence... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking for netdb.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking arpa/inet.h usability... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking arpa/inet.h presence... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking for arpa/inet.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking dirent.h usability... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking dirent.h presence... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking for dirent.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking getopt.h usability... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking getopt.h presence... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:33[36m [DEBUG] | [37m21:34:33[36m [DEBUG] | checking for getopt.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:34[36m [DEBUG] | [37m21:34:34[36m [DEBUG] | checking for net/if.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:34[36m [DEBUG] | [37m21:34:34[36m [DEBUG] | checking for net/if_types.h... no [37m(:11)[0m [37m(:11)[0m
+[37m14:34:34[36m [DEBUG] | [37m21:34:34[36m [DEBUG] | checking for net/ethernet.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:34[36m [DEBUG] | [37m21:34:34[36m [DEBUG] | checking for net/if_arp.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:34[36m [DEBUG] | [37m21:34:34[36m [DEBUG] | checking for netinet/in_systm.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:34[36m [DEBUG] | [37m21:34:34[36m [DEBUG] | checking for netinet/in.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:34[36m [DEBUG] | [37m21:34:34[36m [DEBUG] | checking for netinet/in6.h... no [37m(:11)[0m [37m(:11)[0m
+[37m14:34:34[36m [DEBUG] | [37m21:34:34[36m [DEBUG] | checking for netpacket/packet.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:34[36m [DEBUG] | [37m21:34:34[36m [DEBUG] | checking for netinet/if_ether.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:34[36m [DEBUG] | [37m21:34:34[36m [DEBUG] | checking for netinet/ip.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:34[36m [DEBUG] | [37m21:34:34[36m [DEBUG] | checking for netinet/ip6.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:34[36m [DEBUG] | [37m21:34:34[36m [DEBUG] | checking for resolv.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:34[36m [DEBUG] | [37m21:34:34[36m [DEBUG] | checking for netinet/tcp.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:34[36m [DEBUG] | [37m21:34:34[36m [DEBUG] | checking for netinet/ip_icmp.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:34[36m [DEBUG] | [37m21:34:34[36m [DEBUG] | checking for netinet/icmp6.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:34[36m [DEBUG] | [37m21:34:34[36m [DEBUG] | checking for working __malloc__ attribute... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:34[36m [DEBUG] | [37m21:34:34[36m [DEBUG] | checking for working __nonnull__ attribute... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:34[36m [DEBUG] | [37m21:34:34[36m [DEBUG] | checking for working __warn_unused_result__ attribute... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:34[36m [DEBUG] | [37m21:34:34[36m [DEBUG] | checking for struct ether_header... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:34[36m [DEBUG] | [37m21:34:34[36m [DEBUG] | checking for struct arphdr... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:34[36m [DEBUG] | [37m21:34:34[36m [DEBUG] | checking for struct ether_arp... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:35[36m [DEBUG] | [37m21:34:35[36m [DEBUG] | checking for struct ip... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:35[36m [DEBUG] | [37m21:34:35[36m [DEBUG] | checking for struct icmp... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:35[36m [DEBUG] | [37m21:34:35[36m [DEBUG] | checking for struct ip6_hdr... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:35[36m [DEBUG] | [37m21:34:35[36m [DEBUG] | checking for struct icmp6_hdr... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:35[36m [DEBUG] | [37m21:34:35[36m [DEBUG] | checking for struct nd_neighbor_solicit... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:35[36m [DEBUG] | [37m21:34:35[36m [DEBUG] | checking for struct nd_opt_hdr... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:35[36m [DEBUG] | [37m21:34:35[36m [DEBUG] | checking return type of signal handlers... void [37m(:11)[0m [37m(:11)[0m
+[37m14:34:35[36m [DEBUG] | [37m21:34:35[36m [DEBUG] | checking for asprintf... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:35[36m [DEBUG] | [37m21:34:35[36m [DEBUG] | checking for daemon... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:35[36m [DEBUG] | [37m21:34:35[36m [DEBUG] | checking for fchmod... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:35[36m [DEBUG] | [37m21:34:35[36m [DEBUG] | checking for flock... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:35[36m [DEBUG] | [37m21:34:35[36m [DEBUG] | checking for fork... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:35[36m [DEBUG] | [37m21:34:35[36m [DEBUG] | checking for gettimeofday... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:35[36m [DEBUG] | [37m21:34:35[36m [DEBUG] | checking for mlockall... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:35[36m [DEBUG] | [37m21:34:35[36m [DEBUG] | checking for putenv... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:35[36m [DEBUG] | [37m21:34:35[36m [DEBUG] | checking for recvmmsg... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:35[36m [DEBUG] | [37m21:34:35[36m [DEBUG] | checking for strsignal... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:35[36m [DEBUG] | [37m21:34:35[36m [DEBUG] | checking for nanosleep... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:35[36m [DEBUG] | [37m21:34:35[36m [DEBUG] | checking for unsetenv... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:35[36m [DEBUG] | [37m21:34:35[36m [DEBUG] | checking for vsyslog... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:36[36m [DEBUG] | [37m21:34:36[36m [DEBUG] | checking for devname... no [37m(:11)[0m [37m(:11)[0m
+[37m14:34:36[36m [DEBUG] | [37m21:34:36[36m [DEBUG] | checking for fdevname... no [37m(:11)[0m [37m(:11)[0m
+[37m14:34:36[36m [DEBUG] | [37m21:34:36[36m [DEBUG] | checking for getopt_long... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:36[36m [DEBUG] | [37m21:34:36[36m [DEBUG] | checking whether res_init is declared... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:36[36m [DEBUG] | [37m21:34:36[36m [DEBUG] | checking for res_init in -lresolv... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:36[36m [DEBUG] | [37m21:34:36[36m [DEBUG] | checking for linux/if_tun.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:36[36m [DEBUG] | [37m21:34:36[36m [DEBUG] | checking curses.h usability... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:36[36m [DEBUG] | [37m21:34:36[36m [DEBUG] | checking curses.h presence... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:36[36m [DEBUG] | [37m21:34:36[36m [DEBUG] | checking for curses.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:36[36m [DEBUG] | [37m21:34:36[36m [DEBUG] | checking for initscr in -lncurses... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:36[36m [DEBUG] | [37m21:34:36[36m [DEBUG] | checking for wtimeout in -ltinfo... no [37m(:11)[0m [37m(:11)[0m
+[37m14:34:36[36m [DEBUG] | [37m21:34:36[36m [DEBUG] | checking readline/readline.h usability... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:36[36m [DEBUG] | [37m21:34:36[36m [DEBUG] | checking readline/readline.h presence... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:36[36m [DEBUG] | [37m21:34:36[36m [DEBUG] | checking for readline/readline.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:36[36m [DEBUG] | [37m21:34:36[36m [DEBUG] | checking readline/history.h usability... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:36[36m [DEBUG] | [37m21:34:36[36m [DEBUG] | checking readline/history.h presence... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:36[36m [DEBUG] | [37m21:34:36[36m [DEBUG] | checking for readline/history.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:36[36m [DEBUG] | [37m21:34:36[36m [DEBUG] | checking for readline in -lreadline... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:36[36m [DEBUG] | [37m21:34:36[36m [DEBUG] | checking zlib.h usability... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:36[36m [DEBUG] | [37m21:34:36[36m [DEBUG] | checking zlib.h presence... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:36[36m [DEBUG] | [37m21:34:36[36m [DEBUG] | checking for zlib.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:36[36m [DEBUG] | [37m21:34:36[36m [DEBUG] | checking for compress2 in -lz... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:36[36m [DEBUG] | [37m21:34:36[36m [DEBUG] | checking for lzo1x_1_compress in -llzo2... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:36[36m [DEBUG] | [37m21:34:36[36m [DEBUG] | checking lzo/lzo1x.h usability... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:36[36m [DEBUG] | [37m21:34:36[36m [DEBUG] | checking lzo/lzo1x.h presence... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:36[36m [DEBUG] | [37m21:34:36[36m [DEBUG] | checking for lzo/lzo1x.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:36[36m [DEBUG] | [37m21:34:36[36m [DEBUG] | checking for dlopen... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:36[36m [DEBUG] | [37m21:34:36[36m [DEBUG] | checking openssl/evp.h usability... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:36[36m [DEBUG] | [37m21:34:36[36m [DEBUG] | checking openssl/evp.h presence... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:36[36m [DEBUG] | [37m21:34:36[36m [DEBUG] | checking for openssl/evp.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:36[36m [DEBUG] | [37m21:34:36[36m [DEBUG] | checking openssl/rsa.h usability... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:36[36m [DEBUG] | [37m21:34:36[36m [DEBUG] | checking openssl/rsa.h presence... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:36[36m [DEBUG] | [37m21:34:36[36m [DEBUG] | checking for openssl/rsa.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:36[36m [DEBUG] | [37m21:34:36[36m [DEBUG] | checking openssl/rand.h usability... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:36[36m [DEBUG] | [37m21:34:36[36m [DEBUG] | checking openssl/rand.h presence... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:36[36m [DEBUG] | [37m21:34:36[36m [DEBUG] | checking for openssl/rand.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:37[36m [DEBUG] | [37m21:34:37[36m [DEBUG] | checking openssl/err.h usability... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:37[36m [DEBUG] | [37m21:34:37[36m [DEBUG] | checking openssl/err.h presence... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:37[36m [DEBUG] | [37m21:34:37[36m [DEBUG] | checking for openssl/err.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:37[36m [DEBUG] | [37m21:34:37[36m [DEBUG] | checking openssl/sha.h usability... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:37[36m [DEBUG] | [37m21:34:37[36m [DEBUG] | checking openssl/sha.h presence... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:37[36m [DEBUG] | [37m21:34:37[36m [DEBUG] | checking for openssl/sha.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:37[36m [DEBUG] | [37m21:34:37[36m [DEBUG] | checking openssl/pem.h usability... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:37[36m [DEBUG] | [37m21:34:37[36m [DEBUG] | checking openssl/pem.h presence... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:37[36m [DEBUG] | [37m21:34:37[36m [DEBUG] | checking for openssl/pem.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:37[36m [DEBUG] | [37m21:34:37[36m [DEBUG] | checking openssl/engine.h usability... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:37[36m [DEBUG] | [37m21:34:37[36m [DEBUG] | checking openssl/engine.h presence... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:37[36m [DEBUG] | [37m21:34:37[36m [DEBUG] | checking for openssl/engine.h... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:37[36m [DEBUG] | [37m21:34:37[36m [DEBUG] | checking for EVP_EncryptInit_ex in -lcrypto... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:37[36m [DEBUG] | [37m21:34:37[36m [DEBUG] | checking for RAND_bytes... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:37[36m [DEBUG] | [37m21:34:37[36m [DEBUG] | checking for EVP_EncryptInit_ex... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:37[36m [DEBUG] | [37m21:34:37[36m [DEBUG] | checking for EVP_CIPHER_CTX_new... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:37[36m [DEBUG] | [37m21:34:37[36m [DEBUG] | checking whether OpenSSL_add_all_algorithms is declared... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:37[36m [DEBUG] | [37m21:34:37[36m [DEBUG] | checking whether EVP_aes_256_cfb is declared... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] | checking for BN_GENCB_new... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] | checking for ERR_remove_state... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] | checking for RSA_set0_key... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] | checking for HMAC_CTX_new... yes [37m(:11)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] | checking that generated files are newer than configure... done [37m(:11)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] | configure: creating ./config.status [37m(:11)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] | config.status: creating Makefile [37m(:11)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] | config.status: creating src/Makefile [37m(:11)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] | config.status: creating doc/Makefile [37m(:11)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] | config.status: creating test/Makefile [37m(:11)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] | config.status: creating systemd/Makefile [37m(:11)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] | config.status: creating config.h [37m(:11)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] | config.status: executing depfiles commands [37m(:11)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] | CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/sh /mnt/env/ext/tinc-1.1pre17/missing aclocal-1.16 -I m4 [37m(:11)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] | /mnt/env/ext/tinc-1.1pre17/missing: line 81: aclocal-1.16: not found [37m(:11)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] | WARNING: 'aclocal-1.16' is missing on your system. [37m(:11)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] |          You should only need it if you modified 'acinclude.m4' or [37m(:11)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] |          'configure.ac' or m4 files included by 'configure.ac'. [37m(:11)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] |          The 'aclocal' program is part of the GNU Automake package: [37m(:11)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] |          <https://www.gnu.org/software/automake> [37m(:11)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] |          It also requires GNU Autoconf, GNU m4 and Perl in order to run: [37m(:11)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] |          <https://www.gnu.org/software/autoconf> [37m(:11)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] |          <https://www.gnu.org/software/m4/> [37m(:11)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] |          <https://www.perl.org/> [37m(:11)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] | make: *** [Makefile:364: aclocal.m4] Error 127 [37m(:11)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] | CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/sh /mnt/env/ext/tinc-1.1pre17/missing aclocal-1.16 -I m4 [37m(:11)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] | /mnt/env/ext/tinc-1.1pre17/missing: line 81: aclocal-1.16: not found [37m(:11)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] | WARNING: 'aclocal-1.16' is missing on your system. [37m(:11)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[93m [WARNING] Got error 'Command returned 2: cd /mnt/env/ext/tinc-1.1pre17; ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var; make; make install' from function (<function Executor.Execute at 0x7f0af5e82170>) by Eons Basic Build System. [37m(eons.py:1642)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Traceback (most recent call last): [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] |   File "/usr/lib/python3.10/site-packages/eons/eons.py", line 1632, in RecoverableImplementation [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] |     return function(obj, *args, **kwargs) [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] |   File "/usr/lib/python3.10/site-packages/eons/eons.py", line 2081, in Execute [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] |     return functor(*args, **kwargs, executor=this) [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] |   File "/usr/lib/python3.10/site-packages/eons/eons.py", line 859, in __call__ [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] |     raise e [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] |   File "/usr/lib/python3.10/site-packages/eons/eons.py", line 835, in __call__ [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] |     ret = this.Function() [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] |   File "/usr/lib/python3.10/site-packages/ebbs/ebbs.py", line 378, in Function [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] |     this.Build() [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] |   File "/mnt/run/eons/arbitrary.py", line 17, in Build [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] |     this.RunCommand(command) [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] |   File "/usr/lib/python3.10/site-packages/eons/eons.py", line 859, in __call__ [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] |     raise e [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] |   File "/usr/lib/python3.10/site-packages/eons/eons.py", line 835, in __call__ [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] |     ret = this.Function() [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] |   File "", line 14, in _eons_method_RunCommand [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | eons.eons.CommandUnsuccessful: Command returned 2: cd /mnt/env/ext/tinc-1.1pre17; ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var; make; make install [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] |  [37m(eons.py:217)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Checking if find_by_fetch can fix 'Command returned 2: cd /mnt/env/ext/tinc-1.1pre17; ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var; make; make install'. [37m(eons.py:1663)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Creating new find_by_fetch [37m(eons.py:94)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] <---- find_by_fetch ----> [37m(eons.py:814)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] find_by_fetch((), {'executor': <ebbs.ebbs.EBBS object at 0x7f0af7f8f490>, 'error': CommandUnsuccessful('Command returned 2: cd /mnt/env/ext/tinc-1.1pre17; ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var; make; make install'), 'obj': <ebbs.ebbs.EBBS object at 0x7f0af7f8f490>, 'function': <function Executor.Execute at 0x7f0af5e82170>}) [37m(eons.py:819)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] find_by_fetch was preceded by None [37m(eons.py:722)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Creating new <class 'eons.eons.Method'> from CreateFile [37m(eons.py:883)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Creating new <class 'eons.eons.Method'> from Copy [37m(eons.py:883)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Creating new <class 'eons.eons.Method'> from Delete [37m(eons.py:883)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Creating new <class 'eons.eons.Method'> from RunCommand [37m(eons.py:883)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Populating method find_by_fetch.CreateFile(file, mode=w+) [37m(eons.py:697)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Populating method find_by_fetch.Copy(source, destination, root=/) [37m(eons.py:697)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Populating method find_by_fetch.Delete(target) [37m(eons.py:697)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Populating method find_by_fetch.RunCommand(command, saveout=False, raiseExceptions=True) [37m(eons.py:697)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Setting values from args: {} [37m(eons.py:734)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Fetching obj from ['args', 'globals', 'config', 'precursor', 'executor', 'environment']... [37m(eons.py:567)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] ...find_by_fetch got obj from args. [37m(eons.py:576)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Setting (<class 'ebbs.ebbs.EBBS'>) obj = <ebbs.ebbs.EBBS object at 0x7f0af7f8f490> [37m(eons.py:538)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Fetching function from ['args', 'globals', 'config', 'precursor', 'executor', 'environment']... [37m(eons.py:567)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] ...find_by_fetch got function from args. [37m(eons.py:576)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Setting (<class 'function'>) function = <function Executor.Execute at 0x7f0af5e82170> [37m(eons.py:538)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] >---- find_by_fetch complete ----< [37m(eons.py:867)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Checking if install_from_repo_with_default_package_type can fix 'Command returned 2: cd /mnt/env/ext/tinc-1.1pre17; ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var; make; make install'. [37m(eons.py:1663)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Creating new install_from_repo_with_default_package_type [37m(eons.py:94)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] <---- install_from_repo_with_default_package_type ----> [37m(eons.py:814)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] install_from_repo_with_default_package_type((), {'executor': <ebbs.ebbs.EBBS object at 0x7f0af7f8f490>, 'error': CommandUnsuccessful('Command returned 2: cd /mnt/env/ext/tinc-1.1pre17; ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var; make; make install'), 'obj': <ebbs.ebbs.EBBS object at 0x7f0af7f8f490>, 'function': <function Executor.Execute at 0x7f0af5e82170>}) [37m(eons.py:819)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] install_from_repo_with_default_package_type was preceded by None [37m(eons.py:722)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Creating new <class 'eons.eons.Method'> from CreateFile [37m(eons.py:883)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Creating new <class 'eons.eons.Method'> from Copy [37m(eons.py:883)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Creating new <class 'eons.eons.Method'> from Delete [37m(eons.py:883)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Creating new <class 'eons.eons.Method'> from RunCommand [37m(eons.py:883)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Populating method install_from_repo_with_default_package_type.CreateFile(file, mode=w+) [37m(eons.py:697)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Populating method install_from_repo_with_default_package_type.Copy(source, destination, root=/) [37m(eons.py:697)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Populating method install_from_repo_with_default_package_type.Delete(target) [37m(eons.py:697)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Populating method install_from_repo_with_default_package_type.RunCommand(command, saveout=False, raiseExceptions=True) [37m(eons.py:697)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Setting values from args: {} [37m(eons.py:734)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Fetching obj from ['args', 'globals', 'config', 'precursor', 'executor', 'environment']... [37m(eons.py:567)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] ...install_from_repo_with_default_package_type got obj from args. [37m(eons.py:576)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Setting (<class 'ebbs.ebbs.EBBS'>) obj = <ebbs.ebbs.EBBS object at 0x7f0af7f8f490> [37m(eons.py:538)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Fetching function from ['args', 'globals', 'config', 'precursor', 'executor', 'environment']... [37m(eons.py:567)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] ...install_from_repo_with_default_package_type got function from args. [37m(eons.py:576)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Setting (<class 'function'>) function = <function Executor.Execute at 0x7f0af5e82170> [37m(eons.py:538)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] >---- install_from_repo_with_default_package_type complete ----< [37m(eons.py:867)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Checking if install_from_repo can fix 'Command returned 2: cd /mnt/env/ext/tinc-1.1pre17; ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var; make; make install'. [37m(eons.py:1663)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Creating new install_from_repo [37m(eons.py:94)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] <---- install_from_repo ----> [37m(eons.py:814)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] install_from_repo((), {'executor': <ebbs.ebbs.EBBS object at 0x7f0af7f8f490>, 'error': CommandUnsuccessful('Command returned 2: cd /mnt/env/ext/tinc-1.1pre17; ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var; make; make install'), 'obj': <ebbs.ebbs.EBBS object at 0x7f0af7f8f490>, 'function': <function Executor.Execute at 0x7f0af5e82170>}) [37m(eons.py:819)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] install_from_repo was preceded by None [37m(eons.py:722)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Creating new <class 'eons.eons.Method'> from CreateFile [37m(eons.py:883)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Creating new <class 'eons.eons.Method'> from Copy [37m(eons.py:883)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Creating new <class 'eons.eons.Method'> from Delete [37m(eons.py:883)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Creating new <class 'eons.eons.Method'> from RunCommand [37m(eons.py:883)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Populating method install_from_repo.CreateFile(file, mode=w+) [37m(eons.py:697)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Populating method install_from_repo.Copy(source, destination, root=/) [37m(eons.py:697)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Populating method install_from_repo.Delete(target) [37m(eons.py:697)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Populating method install_from_repo.RunCommand(command, saveout=False, raiseExceptions=True) [37m(eons.py:697)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Setting values from args: {} [37m(eons.py:734)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Fetching obj from ['args', 'globals', 'config', 'precursor', 'executor', 'environment']... [37m(eons.py:567)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] ...install_from_repo got obj from args. [37m(eons.py:576)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Setting (<class 'ebbs.ebbs.EBBS'>) obj = <ebbs.ebbs.EBBS object at 0x7f0af7f8f490> [37m(eons.py:538)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Fetching function from ['args', 'globals', 'config', 'precursor', 'executor', 'environment']... [37m(eons.py:567)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] ...install_from_repo got function from args. [37m(eons.py:576)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Setting (<class 'function'>) function = <function Executor.Execute at 0x7f0af5e82170> [37m(eons.py:538)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] >---- install_from_repo complete ----< [37m(eons.py:867)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Checking if import_module can fix 'Command returned 2: cd /mnt/env/ext/tinc-1.1pre17; ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var; make; make install'. [37m(eons.py:1663)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Creating new import_module [37m(eons.py:94)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] <---- import_module ----> [37m(eons.py:814)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] import_module((), {'executor': <ebbs.ebbs.EBBS object at 0x7f0af7f8f490>, 'error': CommandUnsuccessful('Command returned 2: cd /mnt/env/ext/tinc-1.1pre17; ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var; make; make install'), 'obj': <ebbs.ebbs.EBBS object at 0x7f0af7f8f490>, 'function': <function Executor.Execute at 0x7f0af5e82170>}) [37m(eons.py:819)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] import_module was preceded by None [37m(eons.py:722)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Creating new <class 'eons.eons.Method'> from CreateFile [37m(eons.py:883)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Creating new <class 'eons.eons.Method'> from Copy [37m(eons.py:883)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Creating new <class 'eons.eons.Method'> from Delete [37m(eons.py:883)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Creating new <class 'eons.eons.Method'> from RunCommand [37m(eons.py:883)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Populating method import_module.CreateFile(file, mode=w+) [37m(eons.py:697)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Populating method import_module.Copy(source, destination, root=/) [37m(eons.py:697)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Populating method import_module.Delete(target) [37m(eons.py:697)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Populating method import_module.RunCommand(command, saveout=False, raiseExceptions=True) [37m(eons.py:697)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Setting values from args: {} [37m(eons.py:734)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Fetching obj from ['args', 'globals', 'config', 'precursor', 'executor', 'environment']... [37m(eons.py:567)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] ...import_module got obj from args. [37m(eons.py:576)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Setting (<class 'ebbs.ebbs.EBBS'>) obj = <ebbs.ebbs.EBBS object at 0x7f0af7f8f490> [37m(eons.py:538)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Fetching function from ['args', 'globals', 'config', 'precursor', 'executor', 'environment']... [37m(eons.py:567)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] ...import_module got function from args. [37m(eons.py:576)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Setting (<class 'function'>) function = <function Executor.Execute at 0x7f0af5e82170> [37m(eons.py:538)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] >---- import_module complete ----< [37m(eons.py:867)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Checking if install_with_pip can fix 'Command returned 2: cd /mnt/env/ext/tinc-1.1pre17; ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var; make; make install'. [37m(eons.py:1663)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Creating new install_with_pip [37m(eons.py:94)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] <---- install_with_pip ----> [37m(eons.py:814)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] install_with_pip((), {'executor': <ebbs.ebbs.EBBS object at 0x7f0af7f8f490>, 'error': CommandUnsuccessful('Command returned 2: cd /mnt/env/ext/tinc-1.1pre17; ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var; make; make install'), 'obj': <ebbs.ebbs.EBBS object at 0x7f0af7f8f490>, 'function': <function Executor.Execute at 0x7f0af5e82170>}) [37m(eons.py:819)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] install_with_pip was preceded by None [37m(eons.py:722)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Creating new <class 'eons.eons.Method'> from CreateFile [37m(eons.py:883)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Creating new <class 'eons.eons.Method'> from Copy [37m(eons.py:883)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Creating new <class 'eons.eons.Method'> from Delete [37m(eons.py:883)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Creating new <class 'eons.eons.Method'> from RunCommand [37m(eons.py:883)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Populating method install_with_pip.CreateFile(file, mode=w+) [37m(eons.py:697)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Populating method install_with_pip.Copy(source, destination, root=/) [37m(eons.py:697)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Populating method install_with_pip.Delete(target) [37m(eons.py:697)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Populating method install_with_pip.RunCommand(command, saveout=False, raiseExceptions=True) [37m(eons.py:697)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Setting values from args: {} [37m(eons.py:734)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Fetching obj from ['args', 'globals', 'config', 'precursor', 'executor', 'environment']... [37m(eons.py:567)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] ...install_with_pip got obj from args. [37m(eons.py:576)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Setting (<class 'ebbs.ebbs.EBBS'>) obj = <ebbs.ebbs.EBBS object at 0x7f0af7f8f490> [37m(eons.py:538)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Fetching function from ['args', 'globals', 'config', 'precursor', 'executor', 'environment']... [37m(eons.py:567)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] ...install_with_pip got function from args. [37m(eons.py:576)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] Setting (<class 'function'>) function = <function Executor.Execute at 0x7f0af5e82170> [37m(eons.py:538)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | [37m21:34:38[36m [DEBUG] >---- install_with_pip complete ----< [37m(eons.py:867)[0m [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | eons.eons.CommandUnsuccessful: Command returned 2: cd /mnt/env/ext/tinc-1.1pre17; ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var; make; make install [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | During handling of the above exception, another exception occurred: [37m(:11)[0m
+[37m14:34:38[36m [DEBUG] | eons.eons.FailedErrorResolution: Tried and failed to resolve: Command returned 2: cd /mnt/env/ext/tinc-1.1pre17; ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var; make; make install STACK: {'Command returned 2: cd /mnt/env/ext/tinc-1.1pre17; ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var; make; make install': []}. See earlier logs (in debug) for traceback. [37m(:11)[0m
+[37m14:34:39[93m [WARNING] Got error 'Command returned 1: docker run --rm --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome,dst=/mnt/env --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/.,dst=/mnt/run --mount type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock -w /mnt/run --cpus 1 --entrypoint /mnt/run/run-ebbs.sh --env-file /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/host.env eons/generic.builder.img
+' from function (<function Executor.Execute at 0x7f0a0dddeef0>) by Eons Basic Build System. [37m(eons.py:1642)[0m
+[37m14:34:39[36m [DEBUG] Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/eons/eons.py", line 1632, in RecoverableImplementation
+    return function(obj, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/eons/eons.py", line 2081, in Execute
+    return functor(*args, **kwargs, executor=this)
+  File "/usr/local/lib/python3.10/dist-packages/eons/eons.py", line 859, in __call__
+    raise e
+  File "/usr/local/lib/python3.10/dist-packages/eons/eons.py", line 840, in __call__
+    nextRet = this.CallNext()
+  File "/home/goat/git/infrastructure-tech/network_enabled.img/build/eons/in_container.py", line 83, in CallNext
+    this.RunCommand(f'''docker run \
+  File "/usr/local/lib/python3.10/dist-packages/eons/eons.py", line 859, in __call__
+    raise e
+  File "/usr/local/lib/python3.10/dist-packages/eons/eons.py", line 835, in __call__
+    ret = this.Function()
+  File "", line 14, in _eons_method_RunCommand
+eons.eons.CommandUnsuccessful: Command returned 1: docker run --rm --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome,dst=/mnt/env --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/.,dst=/mnt/run --mount type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock -w /mnt/run --cpus 1 --entrypoint /mnt/run/run-ebbs.sh --env-file /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/host.env eons/generic.builder.img
+
+ [37m(eons.py:217)[0m
+[37m14:34:39[36m [DEBUG] Checking if find_by_fetch can fix 'Command returned 1: docker run --rm --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome,dst=/mnt/env --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/.,dst=/mnt/run --mount type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock -w /mnt/run --cpus 1 --entrypoint /mnt/run/run-ebbs.sh --env-file /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/host.env eons/generic.builder.img
+'. [37m(eons.py:1663)[0m
+[37m14:34:39[36m [DEBUG] Creating new find_by_fetch [37m(eons.py:94)[0m
+[37m14:34:39[36m [DEBUG] <---- find_by_fetch ----> [37m(eons.py:814)[0m
+[37m14:34:39[36m [DEBUG] find_by_fetch((), {'executor': <ebbs.ebbs.EBBS object at 0x7f0a0ed42830>, 'error': CommandUnsuccessful('Command returned 1: docker run --rm --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome,dst=/mnt/env --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/.,dst=/mnt/run --mount type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock -w /mnt/run --cpus 1 --entrypoint /mnt/run/run-ebbs.sh --env-file /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/host.env eons/generic.builder.img\n'), 'obj': <ebbs.ebbs.EBBS object at 0x7f0a0ed42830>, 'function': <function Executor.Execute at 0x7f0a0dddeef0>}) [37m(eons.py:819)[0m
+[37m14:34:39[36m [DEBUG] find_by_fetch was preceded by None [37m(eons.py:722)[0m
+[37m14:34:39[36m [DEBUG] Creating new <class 'eons.eons.Method'> from CreateFile [37m(eons.py:883)[0m
+[37m14:34:39[36m [DEBUG] Creating new <class 'eons.eons.Method'> from Copy [37m(eons.py:883)[0m
+[37m14:34:39[36m [DEBUG] Creating new <class 'eons.eons.Method'> from Delete [37m(eons.py:883)[0m
+[37m14:34:39[36m [DEBUG] Creating new <class 'eons.eons.Method'> from RunCommand [37m(eons.py:883)[0m
+[37m14:34:39[36m [DEBUG] Populating method find_by_fetch.CreateFile(file, mode=w+) [37m(eons.py:697)[0m
+[37m14:34:39[36m [DEBUG] Populating method find_by_fetch.Copy(source, destination, root=/) [37m(eons.py:697)[0m
+[37m14:34:39[36m [DEBUG] Populating method find_by_fetch.Delete(target) [37m(eons.py:697)[0m
+[37m14:34:39[36m [DEBUG] Populating method find_by_fetch.RunCommand(command, saveout=False, raiseExceptions=True) [37m(eons.py:697)[0m
+[37m14:34:39[36m [DEBUG] Setting values from args: {} [37m(eons.py:734)[0m
+[37m14:34:39[36m [DEBUG] Fetching obj from ['args', 'globals', 'config', 'precursor', 'executor', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:39[36m [DEBUG] ...find_by_fetch got obj from args. [37m(eons.py:576)[0m
+[37m14:34:39[36m [DEBUG] Setting (<class 'ebbs.ebbs.EBBS'>) obj = <ebbs.ebbs.EBBS object at 0x7f0a0ed42830> [37m(eons.py:538)[0m
+[37m14:34:39[36m [DEBUG] Fetching function from ['args', 'globals', 'config', 'precursor', 'executor', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:39[36m [DEBUG] ...find_by_fetch got function from args. [37m(eons.py:576)[0m
+[37m14:34:39[36m [DEBUG] Setting (<class 'function'>) function = <function Executor.Execute at 0x7f0a0dddeef0> [37m(eons.py:538)[0m
+[37m14:34:39[36m [DEBUG] >---- find_by_fetch complete ----< [37m(eons.py:867)[0m
+[37m14:34:39[36m [DEBUG] Checking if install_from_repo_with_default_package_type can fix 'Command returned 1: docker run --rm --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome,dst=/mnt/env --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/.,dst=/mnt/run --mount type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock -w /mnt/run --cpus 1 --entrypoint /mnt/run/run-ebbs.sh --env-file /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/host.env eons/generic.builder.img
+'. [37m(eons.py:1663)[0m
+[37m14:34:39[36m [DEBUG] Creating new install_from_repo_with_default_package_type [37m(eons.py:94)[0m
+[37m14:34:39[36m [DEBUG] <---- install_from_repo_with_default_package_type ----> [37m(eons.py:814)[0m
+[37m14:34:39[36m [DEBUG] install_from_repo_with_default_package_type((), {'executor': <ebbs.ebbs.EBBS object at 0x7f0a0ed42830>, 'error': CommandUnsuccessful('Command returned 1: docker run --rm --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome,dst=/mnt/env --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/.,dst=/mnt/run --mount type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock -w /mnt/run --cpus 1 --entrypoint /mnt/run/run-ebbs.sh --env-file /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/host.env eons/generic.builder.img\n'), 'obj': <ebbs.ebbs.EBBS object at 0x7f0a0ed42830>, 'function': <function Executor.Execute at 0x7f0a0dddeef0>}) [37m(eons.py:819)[0m
+[37m14:34:39[36m [DEBUG] install_from_repo_with_default_package_type was preceded by None [37m(eons.py:722)[0m
+[37m14:34:39[36m [DEBUG] Creating new <class 'eons.eons.Method'> from CreateFile [37m(eons.py:883)[0m
+[37m14:34:39[36m [DEBUG] Creating new <class 'eons.eons.Method'> from Copy [37m(eons.py:883)[0m
+[37m14:34:39[36m [DEBUG] Creating new <class 'eons.eons.Method'> from Delete [37m(eons.py:883)[0m
+[37m14:34:39[36m [DEBUG] Creating new <class 'eons.eons.Method'> from RunCommand [37m(eons.py:883)[0m
+[37m14:34:39[36m [DEBUG] Populating method install_from_repo_with_default_package_type.CreateFile(file, mode=w+) [37m(eons.py:697)[0m
+[37m14:34:39[36m [DEBUG] Populating method install_from_repo_with_default_package_type.Copy(source, destination, root=/) [37m(eons.py:697)[0m
+[37m14:34:39[36m [DEBUG] Populating method install_from_repo_with_default_package_type.Delete(target) [37m(eons.py:697)[0m
+[37m14:34:39[36m [DEBUG] Populating method install_from_repo_with_default_package_type.RunCommand(command, saveout=False, raiseExceptions=True) [37m(eons.py:697)[0m
+[37m14:34:39[36m [DEBUG] Setting values from args: {} [37m(eons.py:734)[0m
+[37m14:34:39[36m [DEBUG] Fetching obj from ['args', 'globals', 'config', 'precursor', 'executor', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:39[36m [DEBUG] ...install_from_repo_with_default_package_type got obj from args. [37m(eons.py:576)[0m
+[37m14:34:39[36m [DEBUG] Setting (<class 'ebbs.ebbs.EBBS'>) obj = <ebbs.ebbs.EBBS object at 0x7f0a0ed42830> [37m(eons.py:538)[0m
+[37m14:34:39[36m [DEBUG] Fetching function from ['args', 'globals', 'config', 'precursor', 'executor', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:39[36m [DEBUG] ...install_from_repo_with_default_package_type got function from args. [37m(eons.py:576)[0m
+[37m14:34:39[36m [DEBUG] Setting (<class 'function'>) function = <function Executor.Execute at 0x7f0a0dddeef0> [37m(eons.py:538)[0m
+[37m14:34:39[36m [DEBUG] >---- install_from_repo_with_default_package_type complete ----< [37m(eons.py:867)[0m
+[37m14:34:39[36m [DEBUG] Checking if install_from_repo can fix 'Command returned 1: docker run --rm --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome,dst=/mnt/env --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/.,dst=/mnt/run --mount type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock -w /mnt/run --cpus 1 --entrypoint /mnt/run/run-ebbs.sh --env-file /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/host.env eons/generic.builder.img
+'. [37m(eons.py:1663)[0m
+[37m14:34:39[36m [DEBUG] Creating new install_from_repo [37m(eons.py:94)[0m
+[37m14:34:39[36m [DEBUG] <---- install_from_repo ----> [37m(eons.py:814)[0m
+[37m14:34:39[36m [DEBUG] install_from_repo((), {'executor': <ebbs.ebbs.EBBS object at 0x7f0a0ed42830>, 'error': CommandUnsuccessful('Command returned 1: docker run --rm --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome,dst=/mnt/env --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/.,dst=/mnt/run --mount type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock -w /mnt/run --cpus 1 --entrypoint /mnt/run/run-ebbs.sh --env-file /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/host.env eons/generic.builder.img\n'), 'obj': <ebbs.ebbs.EBBS object at 0x7f0a0ed42830>, 'function': <function Executor.Execute at 0x7f0a0dddeef0>}) [37m(eons.py:819)[0m
+[37m14:34:39[36m [DEBUG] install_from_repo was preceded by None [37m(eons.py:722)[0m
+[37m14:34:39[36m [DEBUG] Creating new <class 'eons.eons.Method'> from CreateFile [37m(eons.py:883)[0m
+[37m14:34:39[36m [DEBUG] Creating new <class 'eons.eons.Method'> from Copy [37m(eons.py:883)[0m
+[37m14:34:39[36m [DEBUG] Creating new <class 'eons.eons.Method'> from Delete [37m(eons.py:883)[0m
+[37m14:34:39[36m [DEBUG] Creating new <class 'eons.eons.Method'> from RunCommand [37m(eons.py:883)[0m
+[37m14:34:39[36m [DEBUG] Populating method install_from_repo.CreateFile(file, mode=w+) [37m(eons.py:697)[0m
+[37m14:34:39[36m [DEBUG] Populating method install_from_repo.Copy(source, destination, root=/) [37m(eons.py:697)[0m
+[37m14:34:39[36m [DEBUG] Populating method install_from_repo.Delete(target) [37m(eons.py:697)[0m
+[37m14:34:39[36m [DEBUG] Populating method install_from_repo.RunCommand(command, saveout=False, raiseExceptions=True) [37m(eons.py:697)[0m
+[37m14:34:39[36m [DEBUG] Setting values from args: {} [37m(eons.py:734)[0m
+[37m14:34:39[36m [DEBUG] Fetching obj from ['args', 'globals', 'config', 'precursor', 'executor', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:39[36m [DEBUG] ...install_from_repo got obj from args. [37m(eons.py:576)[0m
+[37m14:34:39[36m [DEBUG] Setting (<class 'ebbs.ebbs.EBBS'>) obj = <ebbs.ebbs.EBBS object at 0x7f0a0ed42830> [37m(eons.py:538)[0m
+[37m14:34:39[36m [DEBUG] Fetching function from ['args', 'globals', 'config', 'precursor', 'executor', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:39[36m [DEBUG] ...install_from_repo got function from args. [37m(eons.py:576)[0m
+[37m14:34:39[36m [DEBUG] Setting (<class 'function'>) function = <function Executor.Execute at 0x7f0a0dddeef0> [37m(eons.py:538)[0m
+[37m14:34:39[36m [DEBUG] >---- install_from_repo complete ----< [37m(eons.py:867)[0m
+[37m14:34:39[36m [DEBUG] Checking if import_module can fix 'Command returned 1: docker run --rm --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome,dst=/mnt/env --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/.,dst=/mnt/run --mount type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock -w /mnt/run --cpus 1 --entrypoint /mnt/run/run-ebbs.sh --env-file /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/host.env eons/generic.builder.img
+'. [37m(eons.py:1663)[0m
+[37m14:34:39[36m [DEBUG] Creating new import_module [37m(eons.py:94)[0m
+[37m14:34:39[36m [DEBUG] <---- import_module ----> [37m(eons.py:814)[0m
+[37m14:34:39[36m [DEBUG] import_module((), {'executor': <ebbs.ebbs.EBBS object at 0x7f0a0ed42830>, 'error': CommandUnsuccessful('Command returned 1: docker run --rm --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome,dst=/mnt/env --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/.,dst=/mnt/run --mount type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock -w /mnt/run --cpus 1 --entrypoint /mnt/run/run-ebbs.sh --env-file /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/host.env eons/generic.builder.img\n'), 'obj': <ebbs.ebbs.EBBS object at 0x7f0a0ed42830>, 'function': <function Executor.Execute at 0x7f0a0dddeef0>}) [37m(eons.py:819)[0m
+[37m14:34:39[36m [DEBUG] import_module was preceded by None [37m(eons.py:722)[0m
+[37m14:34:39[36m [DEBUG] Creating new <class 'eons.eons.Method'> from CreateFile [37m(eons.py:883)[0m
+[37m14:34:39[36m [DEBUG] Creating new <class 'eons.eons.Method'> from Copy [37m(eons.py:883)[0m
+[37m14:34:39[36m [DEBUG] Creating new <class 'eons.eons.Method'> from Delete [37m(eons.py:883)[0m
+[37m14:34:39[36m [DEBUG] Creating new <class 'eons.eons.Method'> from RunCommand [37m(eons.py:883)[0m
+[37m14:34:39[36m [DEBUG] Populating method import_module.CreateFile(file, mode=w+) [37m(eons.py:697)[0m
+[37m14:34:39[36m [DEBUG] Populating method import_module.Copy(source, destination, root=/) [37m(eons.py:697)[0m
+[37m14:34:39[36m [DEBUG] Populating method import_module.Delete(target) [37m(eons.py:697)[0m
+[37m14:34:39[36m [DEBUG] Populating method import_module.RunCommand(command, saveout=False, raiseExceptions=True) [37m(eons.py:697)[0m
+[37m14:34:39[36m [DEBUG] Setting values from args: {} [37m(eons.py:734)[0m
+[37m14:34:39[36m [DEBUG] Fetching obj from ['args', 'globals', 'config', 'precursor', 'executor', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:39[36m [DEBUG] ...import_module got obj from args. [37m(eons.py:576)[0m
+[37m14:34:39[36m [DEBUG] Setting (<class 'ebbs.ebbs.EBBS'>) obj = <ebbs.ebbs.EBBS object at 0x7f0a0ed42830> [37m(eons.py:538)[0m
+[37m14:34:39[36m [DEBUG] Fetching function from ['args', 'globals', 'config', 'precursor', 'executor', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:39[36m [DEBUG] ...import_module got function from args. [37m(eons.py:576)[0m
+[37m14:34:39[36m [DEBUG] Setting (<class 'function'>) function = <function Executor.Execute at 0x7f0a0dddeef0> [37m(eons.py:538)[0m
+[37m14:34:39[36m [DEBUG] >---- import_module complete ----< [37m(eons.py:867)[0m
+[37m14:34:39[36m [DEBUG] Checking if install_with_pip can fix 'Command returned 1: docker run --rm --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome,dst=/mnt/env --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/.,dst=/mnt/run --mount type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock -w /mnt/run --cpus 1 --entrypoint /mnt/run/run-ebbs.sh --env-file /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/host.env eons/generic.builder.img
+'. [37m(eons.py:1663)[0m
+[37m14:34:39[36m [DEBUG] Creating new install_with_pip [37m(eons.py:94)[0m
+[37m14:34:39[36m [DEBUG] <---- install_with_pip ----> [37m(eons.py:814)[0m
+[37m14:34:39[36m [DEBUG] install_with_pip((), {'executor': <ebbs.ebbs.EBBS object at 0x7f0a0ed42830>, 'error': CommandUnsuccessful('Command returned 1: docker run --rm --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome,dst=/mnt/env --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/.,dst=/mnt/run --mount type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock -w /mnt/run --cpus 1 --entrypoint /mnt/run/run-ebbs.sh --env-file /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/host.env eons/generic.builder.img\n'), 'obj': <ebbs.ebbs.EBBS object at 0x7f0a0ed42830>, 'function': <function Executor.Execute at 0x7f0a0dddeef0>}) [37m(eons.py:819)[0m
+[37m14:34:39[36m [DEBUG] install_with_pip was preceded by None [37m(eons.py:722)[0m
+[37m14:34:39[36m [DEBUG] Creating new <class 'eons.eons.Method'> from CreateFile [37m(eons.py:883)[0m
+[37m14:34:39[36m [DEBUG] Creating new <class 'eons.eons.Method'> from Copy [37m(eons.py:883)[0m
+[37m14:34:39[36m [DEBUG] Creating new <class 'eons.eons.Method'> from Delete [37m(eons.py:883)[0m
+[37m14:34:39[36m [DEBUG] Creating new <class 'eons.eons.Method'> from RunCommand [37m(eons.py:883)[0m
+[37m14:34:39[36m [DEBUG] Populating method install_with_pip.CreateFile(file, mode=w+) [37m(eons.py:697)[0m
+[37m14:34:39[36m [DEBUG] Populating method install_with_pip.Copy(source, destination, root=/) [37m(eons.py:697)[0m
+[37m14:34:39[36m [DEBUG] Populating method install_with_pip.Delete(target) [37m(eons.py:697)[0m
+[37m14:34:39[36m [DEBUG] Populating method install_with_pip.RunCommand(command, saveout=False, raiseExceptions=True) [37m(eons.py:697)[0m
+[37m14:34:39[36m [DEBUG] Setting values from args: {} [37m(eons.py:734)[0m
+[37m14:34:39[36m [DEBUG] Fetching obj from ['args', 'globals', 'config', 'precursor', 'executor', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:39[36m [DEBUG] ...install_with_pip got obj from args. [37m(eons.py:576)[0m
+[37m14:34:39[36m [DEBUG] Setting (<class 'ebbs.ebbs.EBBS'>) obj = <ebbs.ebbs.EBBS object at 0x7f0a0ed42830> [37m(eons.py:538)[0m
+[37m14:34:39[36m [DEBUG] Fetching function from ['args', 'globals', 'config', 'precursor', 'executor', 'environment']... [37m(eons.py:567)[0m
+[37m14:34:39[36m [DEBUG] ...install_with_pip got function from args. [37m(eons.py:576)[0m
+[37m14:34:39[36m [DEBUG] Setting (<class 'function'>) function = <function Executor.Execute at 0x7f0a0dddeef0> [37m(eons.py:538)[0m
+[37m14:34:39[36m [DEBUG] >---- install_with_pip complete ----< [37m(eons.py:867)[0m
+eons.eons.CommandUnsuccessful: Command returned 1: docker run --rm --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome,dst=/mnt/env --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/.,dst=/mnt/run --mount type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock -w /mnt/run --cpus 1 --entrypoint /mnt/run/run-ebbs.sh --env-file /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/host.env eons/generic.builder.img
+
+
+During handling of the above exception, another exception occurred:
+
+eons.eons.FailedErrorResolution: Tried and failed to resolve: Command returned 1: docker run --rm --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome,dst=/mnt/env --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/.,dst=/mnt/run --mount type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock -w /mnt/run --cpus 1 --entrypoint /mnt/run/run-ebbs.sh --env-file /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/host.env eons/generic.builder.img
+ STACK: {'Command returned 1: docker run --rm --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome,dst=/mnt/env --mount type=bind,src=/home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/.,dst=/mnt/run --mount type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock -w /mnt/run --cpus 1 --entrypoint /mnt/run/run-ebbs.sh --env-file /home/goat/git/infrastructure-tech/network_enabled.img/build/tmp/local/tinc.tome/host.env eons/generic.builder.img\n': []}. See earlier logs (in debug) for traceback.

@@ -4,12 +4,13 @@
   "next": [
     {
       "build" : "in_container",
-      "build_in": "tome_tinc",
+      "build_in": "tinc.tome",
       "run_when_any" : [
         "update"
       ],
       "config" : {
         "clear_build_path" : false,
+        "name" : "tinc",
         "type" : "tome",
         "image" : "eons/generic.builder.img",
         "copy_env" : [
@@ -37,7 +38,8 @@
                   "config": {
                     "clear_build_path" : false,
                     "type": "tome",
-                    "visibility": "public"
+                    "visibility": "public",
+                    "version": "0.0.0"
                   }
                 }
               ]
