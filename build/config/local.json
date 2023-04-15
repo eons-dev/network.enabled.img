@@ -11,7 +11,7 @@
       "config" : {
         "clear_build_path" : false,
         "type" : "tome",
-        "image" : "eons/img_generic-builder",
+        "image" : "eons/generic.builder.img",
         "copy_env" : [
           "repo_username",
           "repo_password"
@@ -50,8 +50,8 @@
       "build": "docker",
       "build_in" : "docker",
       "config" : {
-        "base_image" : "eons/img_base",
-        "image_name" : "eons/img_network-enabled",
+        "base_image" : "eons/base.img",
+        "image_name" : "eons/network.enabled.img",
         "image_os" : "alpine",
         "emi" : {
           "install" : [
