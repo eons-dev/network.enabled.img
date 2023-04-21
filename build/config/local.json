@@ -27,9 +27,9 @@
               "commands": [
                 "cd /mnt/env/ext/tinc-1.1pre17; ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var; make; make install",
                 "mkdir /mnt/run/build/BUILD_COMPLETE",
-                "mkdir /mnt/run/build/BUILD_COMPLETE/bin",
-                "cp -rav /usr/sbin/tinc /mnt/run/build/BUILD_COMPLETE/bin/",
-                "cp -rav /usr/sbin/tincd /mnt/run/build/BUILD_COMPLETE/bin/"
+                "mkdir /mnt/run/build/BUILD_COMPLETE/exe",
+                "cp -rav /usr/sbin/tinc /mnt/run/build/BUILD_COMPLETE/exe/",
+                "cp -rav /usr/sbin/tincd /mnt/run/build/BUILD_COMPLETE/exe/"
               ],
               "next" : [
                 {
