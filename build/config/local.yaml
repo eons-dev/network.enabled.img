@@ -1,0 +1,51 @@
+clear_build_path: true
+build_in: tinc
+next:
+	- build: in_container
+		build_in: tinc.tome
+		run_when_any:
+			- update
+		config:
+			clear_build_path: false
+			name: tinc
+			type: tome
+			image: eons/generic.builder.img
+			copy_env:
+				- repo_username
+				- repo_password
+			next:
+				- build: arbitrary
+					copy:
+						- ../../../../ext: ext
+					config:
+						commands:
+							- cd /mnt/env/ext/tinc-1.1pre17; ./configure --prefix=/usr
+								--sysconfdir=/etc --localstatedir=/var; make; make install
+							- mkdir /mnt/run/build/BUILD_COMPLETE
+							- mkdir /mnt/run/build/BUILD_COMPLETE/exe
+							- cp -rav /usr/sbin/tinc /mnt/run/build/BUILD_COMPLETE/exe/
+							- cp -rav /usr/sbin/tincd /mnt/run/build/BUILD_COMPLETE/exe/
+						next:
+							- build: publish
+								build_in: BUILD_COMPLETE
+								config:
+									clear_build_path: false
+									type: tome
+									visibility: public
+									version: 0.0.0
+	- build: docker
+		build_in: docker
+		config:
+			base_image: eons/base.img
+			image_name: eons/network.enabled.img
+			image_os: alpine
+			emi:
+				install:
+					- tinc
+			install:
+				- lzo
+				- nftables
+			also:
+				- EXPOSE 655
+			tags:
+				- latest
